@@ -1,0 +1,886 @@
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\Client-Testimonial-Videos
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\file.svg
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\globe.svg
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\next.svg
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\process-page-text
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\public
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\Telemarketing Guide - singular pages.pdf
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\Templates
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\vercel.svg
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\window.svg
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\written-testimonials
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\written-testimonials-text
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\Client-Testimonial-Videos\Astute-1739487983507.mp4
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\Client-Testimonial-Videos\COSTA RICA IN 4K 60fps HDR (ULTRA HD).mp4
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\Client-Testimonial-Videos\EE-1739527835807.mp4
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\Client-Testimonial-Videos\TEST-1739528148449.mp4
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\Client-Testimonial-Videos\TEST-2-1739528393826.mp4
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\2 pages.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\2 people with line.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\25 Oxford Road Reception.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\5 People with connection line.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Agents Page Image - 2.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Agents Page Image.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Astute Building image 3.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Astute MMP Front Page Image.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\astute-computer-screen.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Astute_logo_with_tag_line_3.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Campaign In Progress Image.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company-Logos
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Data icon with +.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\data icon with 2 pages.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Data Volume Matrix.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Data With Question Marks.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\data-with-one-page.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Email Data.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Managed Prospect stack infographic.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Maps
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\mmp-front-page-image.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Nature Of Business Table.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\New Data.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Number of Employees Table.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Person-envelope-pen.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Process Page - resize.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Process Page.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Region Table.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Search Data.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Test-1.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Video-Testimonial-Images
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Whiteboard page - Clear Whiteboard.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Whiteboard page.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\written-testimonial
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\8x8 Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Alcatel Lucent Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Alternative Networks Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Aruba Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Avaya Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Box Broadband Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Brocade Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\BT Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Carphone Warehouse Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Checkpoint - Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Ciena Logo - Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Cisco Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Cloudblue Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Cradlepoint Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Crowdstrike Logo - Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\EE Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Equinix Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Expand Networks Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Fasthosts Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Fortinet Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Genesys Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\HP Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Ingram Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Ionos Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Juniper Networks - Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Mainline Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Maintel Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Microsoft Logo - Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Mitel Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Okta Logo - Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Omnetis Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Opus Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Orange Logo sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Paloalto Logo - Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Platronics Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Proofpoint Logo - Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Radius Connect Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Ring Central Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Ruckus Logo - Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Samsung Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Sonicwall Logo - Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Sonicwall Logo sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Symantec Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\T Mobile Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Targus Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Three Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Transmode Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Trend Logo - Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Unify Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Unify Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Virgin Media Business Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Virgin Media Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\VMware Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Vodafone Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company- Logos\Westcon Comstor - sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company-Logos\8x8 Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company-Logos\Aruba Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company-Logos\BT Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company-Logos\Radius Connect Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Company-Logos\Three Logo.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2000
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2001
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2002
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2003
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2018
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2019
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2020
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2021
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2022
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2023
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2024
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2025
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\HOF 1st Place Test Placeholder.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\HOF 2nd Place Test Placeholder.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\HOF 3rd Place Test Placeholder.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\HOF-missing.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\Invalid year
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2000\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2000\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2000\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2000\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2000\1st\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2001\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2001\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2001\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2001\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2002\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2002\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2002\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2002\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2003\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2003\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2003\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2003\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Call Stats Champion
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\1st\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Call Stats Champion\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Employee Of The Month\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Call Stats Champion\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Monthly Miscellaneous\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2004\Points Champion\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employe Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employee Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Call Stats Champion
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Miscellaneous Award
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Top Aciever
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\_Employe Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\1st\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\1st\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employe Of The Month\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employe Of The Month\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employe Of The Month\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employe Of The Month\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employe Of The Month\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employe Of The Month\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employe Of The Month\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employe Of The Month\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employe Of The Month\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employe Of The Month\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Employee Of The Month\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Call Stats Champion\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Call Stats Champion\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Call Stats Champion\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Call Stats Champion\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Call Stats Champion\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Call Stats Champion\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Miscellaneous Award\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Miscellaneous Award\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Miscellaneous Award\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Miscellaneous Award\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Miscellaneous Award\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Miscellaneous Award\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Miscellaneous Award\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Miscellaneous Award\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Top Aciever\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Top Aciever\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Top Aciever\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Top Aciever\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Top Aciever\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Top Aciever\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Top Aciever\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Top Aciever\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Top Aciever\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\Monthly Top Aciever\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2005\_Employe Of The Month\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\2nd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2006\Employee Of The Month\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Campaign Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Employee Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Manager Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\_Employee Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\1st\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\1st\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\2nd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\2nd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Campaign Of The Month\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Employee Of The Month\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Employee Of The Month\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Employee Of The Month\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Employee Of The Month\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Employee Of The Month\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Employee Of The Month\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Employee Of The Month\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Employee Of The Month\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Employee Of The Month\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Employee Of The Month\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Employee Of The Month\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Manager Of The Month\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Manager Of The Month\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Manager Of The Month\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Manager Of The Month\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Manager Of The Month\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Manager Of The Month\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Manager Of The Month\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Manager Of The Month\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Manager Of The Month\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Manager Of The Month\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2007\Manager Of The Month\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\Employee Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\Monthly Call Stats Champion
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\1st\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\2nd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\2nd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\2nd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\2nd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\2nd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\2nd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\2nd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\2nd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\2nd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\3rd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\Employee Of The Month\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\Employee Of The Month\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\Employee Of The Month\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\Monthly Call Stats Champion\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\RU\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\RU\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\RU\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\RU\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\RU\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\RU\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\RU\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2008\RU\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\Monthly Achievement
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\1st\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\1st\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\1st\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\1st\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\1st\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\1st\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\1st\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\1st\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\2nd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\3rd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\Monthly Achievement\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\Monthly Achievement\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2009\Monthly Achievement\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\Monthly Achievement
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\1st\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\1st\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\1st\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\1st\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\1st\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\1st\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\1st\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\1st\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\1st\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\1st\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\2nd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\2nd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\2nd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\2nd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\2nd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\2nd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\2nd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\2nd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\2nd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\2nd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\2nd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2010\3rd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\Hall Of Fame 2011
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\1st\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\2nd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2011\3rd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\1st\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\2nd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\2nd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\2nd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\2nd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\2nd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\2nd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\2nd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\2nd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\2nd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\2nd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\2nd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\3rd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\3rd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\3rd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\3rd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\3rd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\3rd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\3rd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\3rd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\3rd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\3rd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2012\3rd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\other
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\1st\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\1st\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\1st\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\1st\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\1st\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\1st\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\1st\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\1st\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\2nd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\3rd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\Call Of The Month\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2013\other\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\Monthly Achievement
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\1st\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\1st\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\1st\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\1st\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\1st\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\1st\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\1st\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\1st\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\1st\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\1st\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\2nd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\3rd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\3rd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\3rd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\3rd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\3rd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\3rd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\3rd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\3rd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\3rd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\3rd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\Monthly Achievement\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\Monthly Achievement\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\RU\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\RU\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\RU\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\RU\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\RU\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\RU\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\RU\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\RU\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\RU\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\RU\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2014\RU\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\Call Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\1st\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\1st\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\1st\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\1st\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\1st\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\1st\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\1st\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\1st\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\1st\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\1st\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\2nd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\2nd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\2nd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\2nd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\2nd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\2nd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\2nd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\2nd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\2nd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\2nd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\2nd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\Call Of The Month\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\RU\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\RU\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\RU\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\RU\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\RU\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\RU\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\RU\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\RU\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\RU\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\RU\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2015\RU\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Hall Of Fame
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\1st\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\2nd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\3rd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\3rd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\3rd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\3rd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\3rd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\3rd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\3rd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\3rd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\3rd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\3rd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Call Of The Month\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2016\Hall Of Fame\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st Place
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Hall Of Fame
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\1st\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\2nd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\3rd\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month\august.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month\december.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month\july.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month\june.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month\march.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month\october.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Call Of The Month\september.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2017\Hall Of Fame\november.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2018\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2018\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2018\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2018\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2019\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2019\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2019\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2019\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2020\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2020\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2020\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2020\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2021\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2021\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2021\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2021\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2022\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2022\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2022\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2022\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2023\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2023\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2023\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2023\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2023\Title
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2023\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2023\1st\may.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2024\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2024\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2024\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2024\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2024\1st\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2024\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2024\1st\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2025\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2025\2
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2025\2nd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2025\3rd
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2025\RU
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2025\1st\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2025\1st\february.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2025\1st\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2025\2nd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2025\2nd\january.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\2025\3rd\april.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\hall-of-fame\Invalid year\1st
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Maps\MapChart_Map (1).png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Maps\MapChart_Map (2).png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Video-Testimonial-Images\Astute-1739487983817.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Video-Testimonial-Images\EE-1739527836017.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Video-Testimonial-Images\Test-1.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Video-Testimonial-Images\TEST-1739528148971.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Video-Testimonial-Images\TEST-2-1739528394020.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\written-testimonial\Written Testimonial Test - Copy.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\written-testimonial\Written Testimonial Test -3.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\written-testimonial\Written Testimonial Test -4.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\written-testimonial\Written Testimonial Test.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788ef4795f51-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788ef48a350e-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788ef48d3e7d-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788ef495cb84-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788ef498c582-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788ef53ea656-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788f068e8b94-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788f0720e036-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788f0726081c-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788f0728cba4-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788f072b916c-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788f072e4897-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788f0731d46f-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788f07340ce6-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788f0737b4dc-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788f153dc379-Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\6788f211f00a2-8x8 Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\8x8 Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\Apple Logo Sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\TEST-1739530415344.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\images\Written-Testimonial-Images\TEST-1739530668631.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\process-page-text\agent-training.txt
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\process-page-text\call-instrument.txt
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\process-page-text\call-to-actions.txt
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\process-page-text\campaign-reporting.txt
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\process-page-text\initial-briefing-section.txt
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\process-page-text\lead-distribution.txt
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\process-page-text\profiling-questions.txt
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\process-page-text\proposition-development.txt
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\process-page-text\sizing-the-campaign.txt
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\process-page-text\supporting-collateral.txt
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\process-page-text\target-audience.txt
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\public\images
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\public\images\written-testimonial
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\public\images\written-testimonial\Written Testimonial Test.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\Templates\Hall Of Fame - Templates.pub
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\written-testimonials\8x8-logo-sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\written-testimonials\alternative-networks-logo-sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\written-testimonials\apple-logo-sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\written-testimonials\bt-logo-sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\written-testimonials\checkpoint-sized.png
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\written-testimonials-text\3gKTdYwau9AYbW9UANey.txt
+C:\Users\jwoods\OneDrive - Astute Ltd\Astute Multimedia Sales Presentater\astute-mmp\public\written-testimonials-text\4f05nXnnwYdoLCYgDcvf.txt

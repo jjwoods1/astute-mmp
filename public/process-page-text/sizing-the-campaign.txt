@@ -1,0 +1,3 @@
+Astute’s campaigns are sized by the number of desk days allocated to the campaign.
+The size of the campaign is generally derived from three dynamics – Budget, Number of Leads Required, and Number of Decision Maker Conversations.
+This needs to be agreed at the initial campaign meeting. Generally a campaign should NOT be any shorter than 20 desk days.

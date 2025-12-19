@@ -1,0 +1,3 @@
+The ‘profiling questions’ required on a lead need to be agreed and documented.
+Each question should have specific response(s) and try to avoid ‘free text’ boxes.
+Remember these questions are asked in a ‘telemarketing context’ and must be deliverable by telemarketing.

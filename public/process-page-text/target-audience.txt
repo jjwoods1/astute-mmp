@@ -1,0 +1,7 @@
+The foundation of any telemarketing campaign is the contact database used for the campaign. The contact data can either be provided by Astute’s client or sourced via a third-party list broker/owner (a broker brief is agreed and issued). When selecting the Campaign Data the following dynamics should be considered:
+• How many company/organization records are required?
+• Are there any Geographical limitations?
+• Is there a minimum size dynamic that can be applied? i.e. Employees, Turnover, Desktops, Servers, etc.
+• What Functional Head(s) is being targeted?
+
+Please Note – If the campaign data is provided by Astute’s client it must be ‘clean’ and fit the ‘profile’ of the campaign proposition. It should also be provided with the correct contact level Functional Head information.

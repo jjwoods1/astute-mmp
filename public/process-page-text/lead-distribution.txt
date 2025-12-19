@@ -1,0 +1,2 @@
+Astute has developed an online Lead Distribution ePortal System called ‘TeleWeb’. Each client is provided with a secure username and password to access the results of the campaign on a daily basis.
+TeleWeb allows you to VIEW, SORT, DOWNLOAD, PRINT, and/or EMAIL the campaign results 24/7 as appropriate.

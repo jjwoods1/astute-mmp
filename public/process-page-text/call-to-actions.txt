@@ -1,0 +1,4 @@
+Call To Action(s) / Outcome Codes
+Each Decision Maker Conversation (DMC) is classified with a specific Outcome Code in the campaign database.
+The positive ‘Call To Action’ outcome codes are generally driven by the objectives of the call - Physical Appointment, Strategic Introduction, Immediate Lead, Development Lead, Event Attendance etc...
+Please Note – Astute can also classify why the target audience were NOT interested. This can provide valuable feedback on how the proposition has resonated with the target audience.

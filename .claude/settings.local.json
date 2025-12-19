@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(npm install:*)",
+      "Bash(npx supabase db push:*)",
+      "Bash(npx supabase:*)",
+      "Bash(powershell:*)",
+      "Bash(done)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\jwoods\\\\OneDrive - Astute Ltd\\\\Astute Multimedia Sales Presentater\\\\astute-mmp\\\\public\\\\images\\\\hall-of-fame\" -Recurse -File)",
+      "Bash(Select-Object FullName)",
+      "Bash(del \"c:\\\\Users\\\\jwoods\\\\OneDrive - Astute Ltd\\\\Astute Multimedia Sales Presentater\\\\astute-mmp\\\\src\\\\components\\\\EuropeMap.tsx\")",
+      "Bash(git push:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
