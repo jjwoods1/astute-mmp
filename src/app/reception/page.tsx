@@ -14,24 +14,24 @@ export default function HomePage() {
         objectFit="cover"
       />
 
-      {/* Hotspots - Corrected Page Links */}
-      <Link href="/testimonials/video">
-        <div className="hotspot" style={{ top: "31.9%", left: "67.8%" }} title="Video Testimonials" />
+      {/* Hotspots */}
+      <Link href="/company-map">
+        <div className="hotspot" style={{ top: "59.9%", left: "29.5%" }} title="Company Map" />
       </Link>
-      <Link href="/campaign-data">
-        <div className="hotspot" style={{ top: "31.9%", left: "78.4%" }} title="Campaign Data" />
+      <Link href="/hall-of-fame">
+        <div className="hotspot" style={{ top: "31.9%", left: "67.8%" }} title="Hall of Fame" />
       </Link>
       <Link href="/process/campaign-data-key-considerations">
         <div className="hotspot" style={{ top: "24.3%", left: "41.0%" }} title="Process" />
       </Link>
-      <Link href="/company-map">
-        <div className="hotspot" style={{ top: "59.9%", left: "29.5%" }} title="Company Map" />
+      <Link href="/testimonials/video">
+        <div className="hotspot" style={{ top: "31.9%", left: "78.4%" }} title="Testimonials" />
       </Link>
-      <Link href="/system-demonstration">
-        <div className="hotspot" style={{ top: "39.9%", left: "56.1%" }} title="System Demonstration" />
+      <Link href="/whiteboard">
+        <div className="hotspot" style={{ top: "39.9%", left: "56.1%" }} title="Whiteboard" />
       </Link>
-      <Link href="/agent">
-        <div className="hotspot" style={{ top: "55.2%", left: "67.8%" }} title="Agent Page" />
+      <Link href="/fte-role">
+        <div className="hotspot" style={{ top: "55.2%", left: "67.8%" }} title="FTE Role" />
       </Link>
 
       {/* Tailwind Styles */}
