@@ -11,8 +11,8 @@ export default function InsideSalesTeam() {
   const [showVideo, setShowVideo] = useState(false);
 
   const sidebarLinks = [
-    { href: "/process/campaign-planning-cycle", title: "Campaign Planning Cycle" },
     { href: "/process/campaign-data-key-considerations", title: "Campaign Data - Key Considerations" },
+    { href: "/process/campaign-planning-cycle", title: "Campaign Planning Cycle" },
     { href: "/process/campaign-in-progress", title: "Campaign in Progress" },
     { href: "/process/market-platform-approach", title: "Market Platform Approach" },
     { href: "/process/inside-sales-team", title: "Inside Sales Team" },

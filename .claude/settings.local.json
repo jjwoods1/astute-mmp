@@ -11,7 +11,9 @@
       "Bash(Select-Object FullName)",
       "Bash(del \"c:\\\\Users\\\\jwoods\\\\OneDrive - Astute Ltd\\\\Astute Multimedia Sales Presentater\\\\astute-mmp\\\\src\\\\components\\\\EuropeMap.tsx\")",
       "Bash(git push:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd complete Astute MMP Next.js project\n\n- Next.js 15 with App Router\n- Tailwind CSS styling\n- Supabase integration for database\n- Interactive world map with country highlighting\n- Hall of Fame page with year selection\n- Company map with international coverage display\n- Video and written testimonials pages\n- Admin dashboard and management pages\n- Process pages with infographics\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate README with proper project documentation\n\n- Add project description and features list\n- Document tech stack and dependencies\n- Include installation and setup instructions\n- Add project structure overview\n- Document database schema and scripts\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }

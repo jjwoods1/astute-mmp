@@ -21,7 +21,7 @@ export default function HomePage() {
       <Link href="/hall-of-fame">
         <div className="hotspot" style={{ top: "31.9%", left: "67.8%" }} title="Hall of Fame" />
       </Link>
-      <Link href="/process/campaign-data-key-considerations">
+      <Link href="/process">
         <div className="hotspot" style={{ top: "24.3%", left: "41.0%" }} title="Process" />
       </Link>
       <Link href="/testimonials/video">

@@ -24,8 +24,8 @@ export default function CampaignPlanningCycle() {
   ];
 
   const navLinks = [
-    { title: "Campaign Planning Cycle", href: "/process/campaign-planning-cycle" },
     { title: "Campaign Data - Key Considerations", href: "/process/campaign-data-key-considerations" },
+    { title: "Campaign Planning Cycle", href: "/process/campaign-planning-cycle" },
     { title: "Campaign in Progress", href: "/process/campaign-in-progress" },
     { title: "Market Platform Approach", href: "/process/market-platform-approach" },
     { title: "Inside Sales Team", href: "/process/inside-sales-team" },
