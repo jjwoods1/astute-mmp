@@ -127,14 +127,15 @@ export default function FTERole() {
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
       style={{ fontFamily: "Ubuntu, sans-serif" }}
     >
-      {/* Background Image */}
-      <Image
-        src="/images/25 Oxford Road Reception.png"
-        alt="Background"
-        fill
-        className="object-cover -z-10"
-        priority
+      {/* Background Image with Blur */}
+      <div
+        className="absolute inset-0 bg-cover bg-center -z-10"
+        style={{
+          backgroundImage: "url('/images/25 Oxford Road Reception.png')",
+          filter: "blur(8px)",
+        }}
       />
+      <div className="absolute inset-0 bg-black/30 -z-10" />
 
       {/* Main Content Area */}
       <div className="flex items-center justify-center gap-8 w-full max-w-[1400px] px-8">
