@@ -2,50 +2,10 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import { deleteCookie } from "cookies-next";
+import { useEffect } from "react";
 
 export default function HomePage() {
   const router = useRouter();
-  const [user, setUser] = useState<{ name: string | null; email: string | null } | null>(null);
-
-  // Check session on mount
-  useEffect(() => {
-    const checkSession = async () => {
-      try {
-        const response = await fetch('/api/auth/session');
-        if (!response.ok) {
-          router.push('/login');
-          return;
-        }
-
-        const data = await response.json();
-        if (data.authenticated) {
-          setUser({
-            name: data.user.name || null,
-            email: data.user.email
-          });
-        } else {
-          router.push('/login');
-        }
-      } catch (error) {
-        router.push('/login');
-      }
-    };
-
-    checkSession();
-  }, [router]);
-
-  // Logout function
-  const handleLogout = async () => {
-    try {
-      await fetch('/api/auth/logout', { method: 'POST' });
-      deleteCookie('sessionId');
-    } catch (error) {
-      console.error('Logout failed:', error);
-    }
-    router.push('/login');
-  };
 
   // Handle F11 key press for fullscreen mode
   useEffect(() => {
@@ -75,7 +35,7 @@ export default function HomePage() {
     >
       {/* Semi-transparent overlay box */}
       <div className="bg-white bg-opacity-95 p-10 rounded-lg shadow-lg w-3/4 max-w-lg relative mt-8 flex flex-col items-center">
-        
+
         {/* Company Logo */}
         <Image
           src="/images/Astute_logo_with_tag_line_3.png"
@@ -106,22 +66,7 @@ export default function HomePage() {
         </div>
 
         {/* Fullscreen Message */}
-        <p className="text-sm text-gray-500 mb-4">Press <span className="font-bold">F11</span> to enter/exit fullscreen mode.</p>
-
-        {/* Show logged-in user details at the bottom */}
-        {user && (
-          <div className="w-full flex flex-col items-center border-t border-gray-300 pt-4">
-            <p className="text-gray-700 text-lg font-medium mb-2">
-              Logged in as: <span className="text-[#0091d2] font-bold">{user.name || user.email}</span>
-            </p>
-            <button
-              onClick={handleLogout}
-              className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm hover:bg-red-700 transition"
-            >
-              Log Out
-            </button>
-          </div>
-        )}
+        <p className="text-sm text-gray-500">Press <span className="font-bold">F11</span> to enter/exit fullscreen mode.</p>
       </div>
     </main>
   );
