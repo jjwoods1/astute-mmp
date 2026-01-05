@@ -23,10 +23,10 @@ export default function NotFound() {
         {/* Logo */}
         <div className="mb-8">
           <Image
-            src="/images/astute-logo.png"
-            alt="Astute Logo"
+            src="/images/Astute_logo_with_tag_line_3.png"
+            alt="Astute MMP Logo"
             width={200}
-            height={60}
+            height={100}
             className="mx-auto drop-shadow-lg"
             priority
           />
