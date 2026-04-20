@@ -165,7 +165,19 @@ export default function HallOfFame() {
   const sliderPosition = ((selectedYear - startYear) / (endYear - startYear)) * 100;
 
   return (
-    <main className="min-h-screen bg-[#0091d2] p-6 font-ubuntu text-white relative overflow-hidden">
+    <main className="min-h-screen p-6 font-ubuntu text-white relative overflow-hidden bg-gradient-to-br from-brand-500 via-brand-600 to-brand-800">
+      {/* Ambient glow orbs for depth (tints of brand blue only) */}
+      <div
+        className="pointer-events-none absolute -top-32 -right-32 w-[520px] h-[520px] rounded-full blur-3xl opacity-40"
+        style={{ background: "radial-gradient(circle, rgba(255,255,255,0.25), transparent 70%)" }}
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute -bottom-32 -left-32 w-[520px] h-[520px] rounded-full blur-3xl opacity-30"
+        style={{ background: "radial-gradient(circle, rgba(0,145,210,0.4), transparent 70%)" }}
+        aria-hidden
+      />
+
       {/* Back to Reception Button */}
       <motion.div
         className="absolute top-4 left-4 z-50"
@@ -175,9 +187,9 @@ export default function HallOfFame() {
       >
         <Link href="/reception">
           <motion.button
-            className="px-4 py-2 bg-white text-[#0091d2] font-semibold rounded-lg hover:bg-[#007bb5] hover:text-white transition shadow-md"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            className="px-4 py-2 bg-white text-brand-500 font-medium rounded-pill hover:bg-brand-50 transition shadow-sm text-body-sm"
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.96 }}
           >
             ← Back to Reception
           </motion.button>
@@ -185,7 +197,7 @@ export default function HallOfFame() {
       </motion.div>
 
       <motion.h1
-        className="text-4xl font-bold text-center mb-4 mt-2"
+        className="text-h1 font-bold text-center mb-4 mt-2 relative"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -232,7 +244,7 @@ export default function HallOfFame() {
 
           {/* Slider Thumb */}
           <div
-            className={`absolute top-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-lg border-4 border-[#007bb5] cursor-grab active:cursor-grabbing hover:scale-110 ${isDragging ? "scale-110" : ""}`}
+            className={`absolute top-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-md border-4 border-brand-700 cursor-grab active:cursor-grabbing hover:scale-110 ${isDragging ? "scale-110" : ""}`}
             style={{
               left: `calc(${sliderPosition}% - 16px)`,
               transition: isDragging ? "none" : "left 0.3s ease"
@@ -263,18 +275,18 @@ export default function HallOfFame() {
           <motion.button
             onClick={() => handleYearChange(Math.max(selectedYear - 1, startYear))}
             disabled={selectedYear === startYear}
-            className="px-6 py-2 bg-white text-[#0091d2] font-bold rounded-lg hover:bg-[#007bb5] hover:text-white transition disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
-            whileHover={{ scale: 1.05, x: -3 }}
-            whileTap={{ scale: 0.95 }}
+            className="px-5 py-2 bg-white text-brand-500 font-medium rounded-pill hover:bg-brand-50 transition disabled:opacity-40 disabled:cursor-not-allowed shadow-sm text-body-sm"
+            whileHover={{ scale: 1.04, x: -3 }}
+            whileTap={{ scale: 0.96 }}
           >
             ← Previous Year
           </motion.button>
           <motion.button
             onClick={() => handleYearChange(Math.min(selectedYear + 1, endYear))}
             disabled={selectedYear === endYear}
-            className="px-6 py-2 bg-white text-[#0091d2] font-bold rounded-lg hover:bg-[#007bb5] hover:text-white transition disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
-            whileHover={{ scale: 1.05, x: 3 }}
-            whileTap={{ scale: 0.95 }}
+            className="px-5 py-2 bg-white text-brand-500 font-medium rounded-pill hover:bg-brand-50 transition disabled:opacity-40 disabled:cursor-not-allowed shadow-sm text-body-sm"
+            whileHover={{ scale: 1.04, x: 3 }}
+            whileTap={{ scale: 0.96 }}
           >
             Next Year →
           </motion.button>

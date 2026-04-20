@@ -139,22 +139,28 @@ export default function CompanyMap() {
   const companiesInSelectedCountry = selectedCountry ? getCompaniesInCountry(selectedCountry) : [];
 
   return (
-    <main className="h-screen overflow-hidden bg-[#0091d2] font-ubuntu flex flex-col">
+    <main className="h-screen overflow-hidden font-ubuntu flex flex-col bg-gradient-to-br from-brand-500 via-brand-600 to-brand-800 relative">
+      {/* Ambient glow */}
+      <div
+        className="pointer-events-none absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full blur-3xl opacity-30"
+        style={{ background: "radial-gradient(circle, rgba(255,255,255,0.3), transparent 70%)" }}
+        aria-hidden
+      />
+
       {/* Back to Reception Button */}
       <div className="absolute top-3 left-3 z-50">
         <Link href="/reception">
-          <button className="px-3 py-1.5 bg-white text-[#0091d2] font-semibold rounded-lg hover:bg-[#007bb5] hover:text-white transition shadow-md text-sm">
+          <button className="px-4 py-1.5 bg-white text-brand-500 font-medium rounded-pill hover:bg-brand-50 transition shadow-sm text-body-sm">
             ← Back to Reception
           </button>
         </Link>
       </div>
 
       {/* Header Section */}
-      <div className="pt-12 pb-3 px-4 flex-shrink-0">
-        <h1 className="text-2xl font-bold text-center text-white">
-          International Coverage
-        </h1>
-        <p className="text-center text-white/80 text-sm">
+      <div className="pt-12 pb-3 px-4 flex-shrink-0 relative">
+        <div className="text-label text-white/70 uppercase text-center mb-2">Company Map</div>
+        <h1 className="text-h1 font-bold text-center text-white">International Coverage</h1>
+        <p className="text-center text-white/80 text-body-sm mt-2">
           Hover over a logo to view coverage • Click a country to see active companies
         </p>
       </div>
@@ -209,19 +215,19 @@ export default function CompanyMap() {
                 className="h-[40px] w-auto rounded shadow-sm border border-gray-100"
               />
               <div className="flex flex-col">
-                <span className="font-bold text-[#0091d2]">
+                <span className="font-bold text-brand-500">
                   {countryNames[selectedCountry] || selectedCountry}
                 </span>
-                <span className="text-sm text-gray-600">
+                <span className="text-body-sm text-neutral-500">
                   {companiesInSelectedCountry.length} {companiesInSelectedCountry.length === 1 ? "company" : "companies"} active
                 </span>
               </div>
-              <div className="h-8 w-px bg-gray-200 mx-2" />
+              <div className="h-8 w-px bg-neutral-200 mx-2" />
               <div className="flex gap-3">
                 {companiesInSelectedCountry.map((company) => (
                   <div
                     key={company}
-                    className="flex items-center gap-2 bg-gray-50 px-3 py-1 rounded-full cursor-pointer hover:bg-[#0091d2] hover:text-white transition group"
+                    className="flex items-center gap-2 bg-neutral-50 px-3 py-1 rounded-pill cursor-pointer hover:bg-brand-500 hover:text-white transition group"
                     onClick={() => {
                       setSelectedCompany(company);
                       setSelectedCountry(null);
@@ -281,17 +287,17 @@ export default function CompanyMap() {
 
       {/* Country Info Tooltip - Shows when hovering on map */}
       {hoveredCountry && hoveredCountryName && !showCountryPanel && (
-        <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-white text-gray-800 px-4 py-2 rounded-full shadow-xl flex items-center gap-2 border border-gray-100 text-sm">
+        <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-white text-neutral-800 px-4 py-2 rounded-pill shadow-md flex items-center gap-2 border border-neutral-200 text-body-sm">
           <img
             src={getFlagUrl(hoveredCountry, 40)}
             alt={hoveredCountryName}
             width={24}
             height={16}
-            className="rounded shadow-sm"
+            className="rounded shadow-xs"
           />
-          <span className="font-semibold">{hoveredCountryName}</span>
+          <span className="font-medium">{hoveredCountryName}</span>
           {getCompaniesInCountry(hoveredCountry).length > 0 && (
-            <span className="text-[#0091d2] ml-1">
+            <span className="text-brand-500 ml-1">
               • {getCompaniesInCountry(hoveredCountry).length} {getCompaniesInCountry(hoveredCountry).length === 1 ? "company" : "companies"}
             </span>
           )}

@@ -124,18 +124,18 @@ export default function FTERole() {
 
   return (
     <main
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-neutral-50"
       style={{ fontFamily: "Ubuntu, sans-serif" }}
     >
-      {/* Background Image with Blur */}
+      {/* Subtle brand-tinted background wash (tints of brand blue only) */}
       <div
-        className="absolute inset-0 bg-cover bg-center z-0"
+        className="pointer-events-none absolute inset-0 opacity-60"
         style={{
-          backgroundImage: "url('/images/25 Oxford Road Reception.png')",
-          filter: "blur(8px)",
+          background:
+            "radial-gradient(circle at 20% 20%, rgba(0, 145, 210, 0.12), transparent 45%), radial-gradient(circle at 80% 70%, rgba(0, 145, 210, 0.08), transparent 50%)",
         }}
+        aria-hidden
       />
-      <div className="absolute inset-0 bg-black/30 z-0" />
 
       {/* Main Content Area */}
       <div className="relative z-10 flex items-center justify-center gap-8 w-full max-w-[1400px] px-8">
@@ -211,52 +211,50 @@ export default function FTERole() {
 
         {/* Detail Panel - Slides in from right */}
         <div
-          className={`bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden transition-all duration-500 ${
+          className={`bg-white border border-neutral-200 rounded-xl shadow-lg overflow-hidden transition-all duration-500 ${
             selectedRole && !isAnimating
               ? "w-[450px] opacity-100 translate-x-0"
               : "w-0 opacity-0 translate-x-20"
           }`}
         >
           {selectedRole && roleDetails[selectedRole] && (
-            <div className="p-6 h-[500px] overflow-y-auto">
+            <div className="p-7 h-[500px] overflow-y-auto">
               {/* Header */}
-              <div className="flex justify-between items-start mb-4">
+              <div className="flex justify-between items-start mb-5">
                 <div>
-                  <span className="inline-block px-3 py-1 bg-[#0091d2] text-white text-xs font-bold rounded-full mb-2">
+                  <span className="inline-block px-3 py-1 bg-brand-50 text-brand-700 text-label uppercase rounded-pill mb-3">
                     {selectedRole.toUpperCase().replace("-", " ")}
                   </span>
-                  <h2 className="text-xl font-bold text-gray-800">
+                  <h2 className="text-h3 text-neutral-900">
                     {roleDetails[selectedRole].title}
                   </h2>
                 </div>
                 <button
                   onClick={closePanel}
-                  className="text-gray-400 hover:text-gray-600 transition text-2xl leading-none"
+                  className="w-9 h-9 rounded-pill bg-neutral-100 hover:bg-neutral-200 text-neutral-700 flex items-center justify-center"
+                  aria-label="Close"
                 >
-                  &times;
+                  ×
                 </button>
               </div>
 
               {/* Description */}
-              <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+              <p className="text-body-sm text-neutral-600 mb-6 leading-relaxed">
                 {roleDetails[selectedRole].description}
               </p>
 
               {/* Responsibilities */}
               <div className="mb-6">
-                <h3 className="text-sm font-bold text-[#0091d2] mb-3 flex items-center gap-2">
-                  <span className="w-6 h-6 bg-[#0091d2] text-white rounded-full flex items-center justify-center text-xs">1</span>
-                  Key Responsibilities
-                </h3>
-                <ul className="space-y-2">
+                <div className="text-label text-brand-500 uppercase mb-3">01 · Key Responsibilities</div>
+                <ul className="flex flex-col gap-2">
                   {roleDetails[selectedRole].responsibilities.map((item, index) => (
                     <li
                       key={index}
-                      className="flex items-start gap-2 text-sm text-gray-700 animate-slide-in"
+                      className="flex gap-3 text-body-sm text-neutral-700 animate-slide-in"
                       style={{ animationDelay: `${index * 100}ms` }}
                     >
-                      <span className="text-[#0091d2] mt-1">&#x2022;</span>
-                      {item}
+                      <span className="font-mono text-brand-500 font-bold shrink-0 pt-0.5" aria-hidden>→</span>
+                      <span>{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -264,15 +262,12 @@ export default function FTERole() {
 
               {/* Skills */}
               <div>
-                <h3 className="text-sm font-bold text-[#0091d2] mb-3 flex items-center gap-2">
-                  <span className="w-6 h-6 bg-[#0091d2] text-white rounded-full flex items-center justify-center text-xs">2</span>
-                  Required Skills
-                </h3>
+                <div className="text-label text-brand-500 uppercase mb-3">02 · Required Skills</div>
                 <div className="flex flex-wrap gap-2">
                   {roleDetails[selectedRole].skills.map((skill, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full border border-gray-200 hover:bg-[#0091d2] hover:text-white hover:border-[#0091d2] transition cursor-default animate-fade-in"
+                      className="px-3 py-1 bg-brand-50 text-brand-700 text-body-sm rounded-pill border border-brand-200 hover:bg-brand-500 hover:text-white hover:border-brand-500 transition cursor-default animate-fade-in"
                       style={{ animationDelay: `${index * 100 + 400}ms` }}
                     >
                       {skill}
@@ -281,9 +276,8 @@ export default function FTERole() {
                 </div>
               </div>
 
-              {/* Connection Lines Visual */}
-              <div className="mt-6 pt-4 border-t border-gray-100">
-                <p className="text-xs text-gray-400 text-center">
+              <div className="mt-6 pt-4 border-t border-neutral-200">
+                <p className="text-body-sm text-neutral-400 text-center">
                   Click another role to compare or click the same role to close
                 </p>
               </div>
@@ -295,9 +289,9 @@ export default function FTERole() {
       {/* Back to Reception Button */}
       <button
         onClick={() => router.push("/reception")}
-        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg font-semibold text-white bg-[#0091d2] border-2 border-white shadow-lg hover:bg-[#007bb5] transition-all duration-300 hover:scale-105 z-20"
+        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 px-5 py-2.5 rounded-pill font-medium text-white bg-brand-500 shadow-sm hover:bg-brand-600 transition-all duration-300 hover:scale-[1.02] z-20 text-body-sm"
       >
-        &#x2190; Back to Reception
+        ← Back to Reception
       </button>
 
       {/* Custom Styles */}
