@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function MobileBlocker() {
   return (
-    <div className="lg:hidden fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-gradient-to-br from-[#0091d2] to-[#005f8a] p-8">
+    <div className="lg:hidden fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-gradient-to-br from-brand-500 to-brand-700 p-8">
       {/* Logo */}
       <div className="mb-8">
         <Image

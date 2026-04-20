@@ -5,13 +5,51 @@
 @tailwind utilities;
 
 :root {
+  /* Legacy defaults retained so pages that don't set their own background
+     during the modernisation rollout still render correctly. Modern pages
+     explicitly set bg-white / bg-brand-500 etc. */
   --background: #0091d2;
   --foreground: #ffffff;
   --primary-font: 'Ubuntu', sans-serif;
+
+  /* Design-system colour tokens — mirror tailwind.config.js so non-Tailwind
+     contexts (inline styles, canvas, SVG) can read them. */
+  --brand-50:  #e6f4fb;
+  --brand-100: #cfe7f4;
+  --brand-200: #bfe2f3;
+  --brand-300: #94d0ea;
+  --brand-400: #5cb9e2;
+  --brand-500: #0091d2;
+  --brand-600: #0082bd;
+  --brand-700: #006ca0;
+  --brand-800: #005a86;
+  --brand-900: #00486b;
+
+  --neutral-50:  #f8fafc;
+  --neutral-100: #f1f5f9;
+  --neutral-200: #e2e8f0;
+  --neutral-300: #cbd5e1;
+  --neutral-400: #94a3b8;
+  --neutral-500: #64748b;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  --neutral-800: #1e293b;
+  --neutral-900: #0f172a;
+
+  /* Layered soft shadows */
+  --shadow-xs: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 2px 6px -1px rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 8px 24px -12px rgba(15, 23, 42, 0.12), 0 2px 6px -3px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 20px 50px -20px rgba(0, 72, 107, 0.35), 0 4px 12px -6px rgba(15, 23, 42, 0.08);
 }
 
 html, body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--primary-font);
+}
+
+/* Ensure tabular figures in stat-tile numerics */
+.tabular-numbers {
+  font-variant-numeric: tabular-nums;
 }
