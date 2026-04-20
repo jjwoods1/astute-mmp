@@ -8,10 +8,10 @@ export default function MobileBlocker() {
       {/* Logo */}
       <div className="mb-8">
         <Image
-          src="/images/astute-logo.png"
+          src="/images/Astute_logo_with_tag_line_3.png"
           alt="Astute Logo"
-          width={180}
-          height={54}
+          width={200}
+          height={60}
           className="drop-shadow-lg"
           priority
         />

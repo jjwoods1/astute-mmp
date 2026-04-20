@@ -18,7 +18,8 @@ const DIMENSIONS = {
 
 export function LogoMark({ size = "md", className, priority = false, withTagline = true }: LogoMarkProps) {
   const { w, h } = DIMENSIONS[size];
-  const src = withTagline ? "/Astute_logo_with_tag_line_3.png" : "/images/astute-logo.png";
+  // Note: logo lives under /public/images/, not the public root.
+  const src = withTagline ? "/images/Astute_logo_with_tag_line_3.png" : "/images/Logo.png";
   return (
     <Image
       src={src}
