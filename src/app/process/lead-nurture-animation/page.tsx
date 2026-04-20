@@ -1,135 +1,89 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter, usePathname } from "next/navigation";
-import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
+import { ProcessSubPageShell } from "@/components/ProcessSubPageShell";
+import { Card } from "@/components/ui";
+import { LEAD_NURTURE_SLIDES } from "@/lib/process-data";
 
-export default function LeadNurtureAnimation() {
-  const router = useRouter();
-  const pathname = usePathname();
-  const [slideIndex, setSlideIndex] = useState(0);
+export default function LeadNurtureAnimationPage() {
+  const [index, setIndex] = useState(0);
+  const [direction, setDirection] = useState<1 | -1>(1);
 
-  const slides = [
-    {
-      video: "https://www.youtube.com/embed/YOUR_VIDEO_ID_1",
-      title: "Lead Nurture (Short)",
-      description: `“A sustained relationship with (the) influencers and decision-makers in a potential customer, 
-      through which relevant and valuable insight is delivered through integrated channels in a coordinated process, 
-      in exchange for increasing intimacy and influence.”`,
-      author: "Forrester Research",
-    },
-    {
-      video: "https://www.youtube.com/embed/YOUR_VIDEO_ID_2",
-      title: "Lead Nurture (Long)",
-      description: `“Effective nurturing strategies are built around the customer’s journey through the buying process.”`,
-      author: "Lori Wizdo, Forrester Research",
-    },
-    {
-      video: "",
-      title: "Email & Lead Nurturing Stats",
-      description: `“Over-emailing and irrelevant content are the top reasons people unsubscribe from email mailing lists.”`,
-      author: "Chadwick Martin Bailey",
-    },
-  ];
+  const slide = LEAD_NURTURE_SLIDES[index];
+  const total = LEAD_NURTURE_SLIDES.length;
 
-  const nextSlide = () => {
-    setSlideIndex((slideIndex + 1) % slides.length);
+  const go = (delta: 1 | -1) => {
+    setDirection(delta);
+    setIndex((i) => (i + delta + total) % total);
   };
-
-  const prevSlide = () => {
-    setSlideIndex((slideIndex - 1 + slides.length) % slides.length);
-  };
-
-  const sidebarLinks = [
-    { href: "/process/campaign-data-key-considerations", title: "Campaign Data - Key Considerations" },
-    { href: "/process/campaign-planning-cycle", title: "Campaign Planning Cycle" },
-    { href: "/process/campaign-in-progress", title: "Campaign in Progress" },
-    { href: "/process/market-platform-approach", title: "Market Platform Approach" },
-    { href: "/process/inside-sales-team", title: "Inside Sales Team" },
-    { href: "/process/managed-prospect-stack", title: "Managed Prospect Stack" },
-    { href: "/process/lead-nurture-animation", title: "Lead Nurture Animation" }
-  ];
 
   return (
-    <main className="relative min-h-screen flex items-center p-10">
-      {/* Background Blur */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/Process Page - resize.png')",
-          filter: "blur(8px)",
-          zIndex: -1
-        }}
-      />
-      <div className="absolute inset-0 bg-black bg-opacity-30 z-0" />
+    <ProcessSubPageShell activeId="lead-nurture">
+      <Card className="max-w-2xl">
+        <div className="text-label text-brand-500 uppercase mb-5">Lead Nurture Animation</div>
 
-      {/* Sidebar */}
-      <aside className="fixed right-0 top-0 h-full w-80 bg-[#0091d2] p-6 flex flex-col justify-between shadow-lg z-10">
-        <nav className="space-y-3">
-          {sidebarLinks.map(({ href, title }) => (
-            <Link
-              key={title}
-              href={href}
-              className={`block text-lg font-medium py-4 px-4 rounded-lg transition ${
-                pathname === href
-                  ? "bg-white text-[#0091d2] font-bold shadow-md"
-                  : "text-white hover:bg-white hover:text-[#0091d2]"
-              }`}
-            >
-              {title}
-            </Link>
-          ))}
-        </nav>
-        <button
-          onClick={() => router.push("/reception")}
-          className="bg-white text-[#0091d2] p-3 rounded-lg font-bold hover:bg-[#007bb0] hover:text-white transition"
-        >
-          Back to Reception
-        </button>
-      </aside>
-
-      {/* Centered Content Area */}
-      <div className="flex flex-col items-center w-full max-w-5xl pr-96 ml-auto mr-auto z-10">
-        <div className="bg-white/90 backdrop-blur-lg p-8 rounded-lg shadow-lg border border-gray-300 w-full max-w-[700px] h-[680px] text-center flex flex-col">
-          {/* Title Box */}
-          <div className="bg-white text-[#0091d2] text-lg font-bold px-6 py-2 rounded-full shadow-md border border-gray-300 inline-block mb-6">
-            Lead Nurture Animation
-          </div>
-
-          {/* Slideshow */}
-          <div className="flex flex-col items-center text-left flex-1">
-            {slides[slideIndex].video ? (
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, x: direction * 24 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: direction * -24 }}
+            transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+          >
+            {slide.video ? (
               <iframe
-                className="w-full h-64 rounded-lg shadow-md mb-4"
-                src={slides[slideIndex].video}
+                className="w-full aspect-video rounded-md mb-6"
+                src={slide.video}
                 frameBorder="0"
                 allowFullScreen
-              ></iframe>
+                title={slide.title}
+              />
             ) : (
-              <div className="w-full h-64 mb-4"></div>
+              <div className="w-full aspect-video rounded-md mb-6 bg-brand-50 flex items-center justify-center text-neutral-400 text-body-sm">
+                No video for this entry
+              </div>
             )}
-            <h2 className="text-xl font-bold text-[#0091d2]">{slides[slideIndex].title}</h2>
-            <p className="text-gray-800 mt-2">{slides[slideIndex].description}</p>
-            <p className="text-gray-500 italic mt-2">{slides[slideIndex].author}</p>
-          </div>
+            <div className="text-h3 text-neutral-900 mb-2">{slide.title}</div>
+            <blockquote className="text-body text-neutral-700 leading-relaxed border-l-2 border-brand-500 pl-4 my-4">
+              {slide.description}
+            </blockquote>
+            <div className="text-body-sm text-neutral-500 italic">— {slide.author}</div>
+          </motion.div>
+        </AnimatePresence>
 
-          {/* Navigation Buttons - Inside the box */}
-          <div className="flex justify-between mt-auto pt-4">
-            <button
-              onClick={prevSlide}
-              className="text-[#0091d2] text-2xl font-bold px-6 py-3 rounded-lg hover:bg-[#e6f7fc] transition border border-[#0091d2]"
-            >
-              &#9665;
-            </button>
-            <button
-              onClick={nextSlide}
-              className="text-[#0091d2] text-2xl font-bold px-6 py-3 rounded-lg hover:bg-[#e6f7fc] transition border border-[#0091d2]"
-            >
-              &#9655;
-            </button>
+        <div className="flex items-center justify-between mt-6 pt-4 border-t border-neutral-200">
+          <button
+            onClick={() => go(-1)}
+            className="inline-flex items-center gap-2 text-body-sm text-neutral-600 hover:text-brand-500 transition-colors"
+            aria-label="Previous slide"
+          >
+            <span>←</span>
+            <span>Previous</span>
+          </button>
+          <div className="flex items-center gap-2">
+            {LEAD_NURTURE_SLIDES.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => {
+                  setDirection(i > index ? 1 : -1);
+                  setIndex(i);
+                }}
+                className={`w-2 h-2 rounded-pill transition-colors ${i === index ? "bg-brand-500" : "bg-neutral-300 hover:bg-neutral-400"}`}
+                aria-label={`Go to slide ${i + 1}`}
+              />
+            ))}
           </div>
+          <button
+            onClick={() => go(1)}
+            className="inline-flex items-center gap-2 text-body-sm text-neutral-600 hover:text-brand-500 transition-colors"
+            aria-label="Next slide"
+          >
+            <span>Next</span>
+            <span>→</span>
+          </button>
         </div>
-      </div>
-    </main>
+      </Card>
+    </ProcessSubPageShell>
   );
 }
