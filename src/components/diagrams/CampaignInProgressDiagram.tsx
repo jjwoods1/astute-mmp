@@ -98,8 +98,7 @@ export function CampaignInProgressDiagram({ className }: Props) {
             strokeLinejoin="round"
             markerEnd="url(#cip-arrow)"
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, margin: "-40px" }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 0.5 + i * 0.1, duration: 0.4, ease: "easeOut" }}
           />
         ))}
@@ -116,8 +115,7 @@ export function CampaignInProgressDiagram({ className }: Props) {
             <motion.g
               key={n.id}
               initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.07, duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
             >
               <rect
