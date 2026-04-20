@@ -30,8 +30,10 @@ const NODES: DiagramNode[] = [
 ];
 
 const EDGES: DiagramEdge[] = [
+  // Start branches: up-and-right to Profile (optional), and straight right to eDispatch.
+  // The two paths share the 260→330 trunk, creating a clean T-junction.
   { from: "start",      to: "profile",    d: "M 260 310 L 330 310 L 330 80 L 392 80" },
-  { from: "profile",    to: "edispatch",  d: "M 530 125 L 530 252" },
+  { from: "start",      to: "edispatch",  d: "M 260 310 L 392 310" },
   { from: "edispatch",  to: "qual",       d: "M 660 310 L 787 310" },
   { from: "qual",       to: "doubleconf", d: "M 935 365 L 935 437" },
   { from: "doubleconf", to: "teleweb",    d: "M 935 535 L 935 617" },
