@@ -1,6 +1,12 @@
 "use client";
+
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import { toast } from "sonner";
+import { Button, ChapterRail, SectionHeader } from "@/components/ui";
+import { FadeIn } from "@/components/motion";
+import type { ChapterRailItem } from "@/components/ui";
 import { errorMessage } from "@/lib/errors";
 
 interface TableRow {
@@ -19,9 +25,14 @@ interface ProposalData {
   secondaryObjective: string;
 }
 
-export default function ChannelLeadGenerationProposal() {
+type SectionId = "summary" | "costs" | "objectives";
+
+export default function EditableChannelLeadGenerationProposal() {
+  const router = useRouter();
   const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
   const [proposalId, setProposalId] = useState<number | null>(null);
+  const [activeSection, setActiveSection] = useState<SectionId>("summary");
   const [data, setData] = useState<ProposalData>({
     companyName: "8x8",
     tableRows: [
@@ -62,15 +73,18 @@ export default function ChannelLeadGenerationProposal() {
       }
       setLoading(false);
     };
-
     fetchProposalData();
   }, []);
 
-  const handleChange = (field: string, value: string | number | TableRow[]) => {
-    setData((prev) => ({ ...prev, [field]: value }));
+  const updateRow = (index: number, field: keyof TableRow, value: string | number) => {
+    setData((prev) => ({
+      ...prev,
+      tableRows: prev.tableRows.map((row, i) => (i === index ? { ...row, [field]: value } : row)),
+    }));
   };
 
   const handleSave = async () => {
+    setSaving(true);
     const proposalData = {
       companyName: data.companyName,
       tableRows: data.tableRows,
@@ -101,91 +115,178 @@ export default function ChannelLeadGenerationProposal() {
         throw new Error(errData.error || "Failed to save");
       }
 
-      alert("Data saved successfully!");
+      toast.success("Proposal saved");
     } catch (error) {
       console.error("Error saving:", error);
-      alert("Failed to save: " + errorMessage(error));
+      toast.error(`Failed to save: ${errorMessage(error)}`);
+    } finally {
+      setSaving(false);
     }
   };
 
-  if (loading) return <div className="text-center mt-10 text-lg text-gray-600">Loading...</div>;
+  const sections: ChapterRailItem[] = [
+    { id: "summary",    title: "Summary",    onSelect: () => setActiveSection("summary") },
+    { id: "costs",      title: "Costs",      onSelect: () => setActiveSection("costs") },
+    { id: "objectives", title: "Objectives", onSelect: () => setActiveSection("objectives") },
+  ];
+
+  const inputCls =
+    "w-full bg-white border border-neutral-200 rounded-md px-3 py-2 text-body text-neutral-900 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors";
+  const labelCls = "text-label text-neutral-500 uppercase mb-2 block";
+
+  if (loading) {
+    return (
+      <main className="min-h-screen bg-neutral-50 flex items-center justify-center font-ubuntu">
+        <div className="text-body text-neutral-500">Loading…</div>
+      </main>
+    );
+  }
+
+  const renderSection = () => {
+    switch (activeSection) {
+      case "summary":
+        return (
+          <div>
+            <SectionHeader
+              eyebrow="Edit · Prepared for"
+              title="Summary"
+              lede="Update the client name and headline total."
+            />
+            <div className="mt-10 max-w-xl flex flex-col gap-6">
+              <div>
+                <label className={labelCls}>Company name</label>
+                <input
+                  type="text"
+                  value={data.companyName}
+                  onChange={(e) => setData((p) => ({ ...p, companyName: e.target.value }))}
+                  className={inputCls}
+                />
+              </div>
+              <div>
+                <label className={labelCls}>Total campaign cost</label>
+                <input
+                  type="text"
+                  value={data.totalCampaignCost}
+                  onChange={(e) => setData((p) => ({ ...p, totalCampaignCost: e.target.value }))}
+                  className={inputCls}
+                />
+              </div>
+            </div>
+          </div>
+        );
+
+      case "costs":
+        return (
+          <div>
+            <SectionHeader eyebrow="Edit · 01 · Breakdown" title="Cost Breakdown" />
+            <div className="mt-10 max-w-5xl">
+              <div className="flex items-center text-label text-neutral-400 uppercase px-4 py-3 border-b border-neutral-200">
+                <div className="flex-1">Description</div>
+                <div className="w-24 text-center">Value</div>
+                <div className="w-36 text-right">Item cost</div>
+                <div className="w-48 text-right">Total line cost</div>
+              </div>
+              {data.tableRows.map((row, i) => (
+                <div key={i} className="flex items-center gap-3 px-4 py-3 border-b border-neutral-200">
+                  <div className="flex-1 text-body text-neutral-800 min-w-0 truncate">
+                    {row.description.replace(/\{COMPANY\}/g, data.companyName)}
+                  </div>
+                  <input
+                    type="number"
+                    value={row.value}
+                    onChange={(e) => updateRow(i, "value", Number(e.target.value))}
+                    className={`${inputCls} w-24 text-center`}
+                  />
+                  <input
+                    type="text"
+                    value={row.cost}
+                    onChange={(e) => updateRow(i, "cost", e.target.value)}
+                    className={`${inputCls} w-36 text-right tabular-numbers`}
+                  />
+                  <input
+                    type="text"
+                    value={row.totalCost}
+                    onChange={(e) => updateRow(i, "totalCost", e.target.value)}
+                    className={`${inputCls} w-48 text-right tabular-numbers`}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+
+      case "objectives":
+        return (
+          <div>
+            <SectionHeader eyebrow="Edit · 02 · Objectives" title="Objectives" lede="Markdown supported." />
+            <div className="mt-10 max-w-3xl flex flex-col gap-6">
+              {([
+                ["leadBenchmark", "Lead benchmark"],
+                ["primaryObjective", "Primary objective"],
+                ["secondaryObjective", "Secondary objective"],
+              ] as const).map(([field, label]) => (
+                <div key={field}>
+                  <label className={labelCls}>{label}</label>
+                  <textarea
+                    value={data[field]}
+                    onChange={(e) => setData((p) => ({ ...p, [field]: e.target.value }))}
+                    rows={4}
+                    className={`${inputCls} font-mono text-body-sm leading-relaxed`}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+    }
+  };
 
   return (
-    <main className="min-h-screen bg-gray-100 font-[Ubuntu]">
-      {/* Header */}
-      <header className="bg-[#0091d2] text-white p-6 shadow-md">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <h1 className="text-3xl font-bold">Edit Channel Lead Generation Proposal - {data.companyName}</h1>
-          <nav className="space-x-6">
-            <Link href="/" className="text-white text-lg hover:underline">Home</Link>
-            <Link href="/dashboard" className="text-white text-lg hover:underline">Dashboard</Link>
-          </nav>
+    <main className="min-h-screen bg-neutral-50 flex font-ubuntu">
+      {/* Left rail */}
+      <div className="sticky top-0 h-screen flex flex-col bg-white border-r border-neutral-200 w-[260px] shrink-0">
+        <div className="p-5 border-b border-neutral-200">
+          <div className="text-label text-neutral-400 uppercase mb-1">Edit Proposal</div>
+          <div className="text-h3 text-neutral-900 leading-tight">{data.companyName}</div>
         </div>
-      </header>
+        <ChapterRail heading="Contents" items={sections} activeId={activeSection} className="flex-1 border-r-0" />
+        <div className="p-4 border-t border-neutral-200">
+          <div className="rounded-lg bg-brand-500 text-white p-4 shadow-sm">
+            <div className="text-label uppercase opacity-80 mb-1">Total</div>
+            <div className="text-h2 font-bold leading-none tabular-numbers">{data.totalCampaignCost}</div>
+          </div>
+        </div>
+        <div className="p-4 border-t border-neutral-200 flex flex-col gap-2">
+          <Button variant="ghost" size="sm" onClick={() => router.push("/dashboard")} className="w-full justify-start">
+            ← Back to Dashboard
+          </Button>
+        </div>
+      </div>
 
-      {/* Main Content */}
-      <section className="max-w-7xl mx-auto p-10">
-        {/* Editable Company Name */}
-        <div className="mb-6">
-          <label className="text-lg font-bold text-gray-700">Company Name</label>
-          <input
-            type="text"
-            value={data.companyName}
-            onChange={(e) => handleChange("companyName", e.target.value)}
-            className="block w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0091d2] text-lg"
-          />
-        </div>
+      {/* Content area */}
+      <div className="flex-1 min-w-0 px-10 lg:px-16 py-12 pb-28">
+        <FadeIn y={0} duration={0.4}>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeSection}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -6 }}
+              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            >
+              {renderSection()}
+            </motion.div>
+          </AnimatePresence>
+        </FadeIn>
+      </div>
 
-        {/* Editable Table */}
-        <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-          <h2 className="text-xl font-bold text-[#0091d2] mb-4">Proposal Cost Breakdown</h2>
-          <table className="w-full border-collapse border border-gray-300">
-            <thead>
-              <tr className="bg-[#0091d2] text-white">
-                <th className="border px-4 py-2">Description</th>
-                <th className="border px-4 py-2">Value</th>
-                <th className="border px-4 py-2">Item Cost</th>
-                <th className="border px-4 py-2">Total Line Cost</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.tableRows.map((row, index) => (
-                <tr key={index} className="bg-gray-50 hover:bg-gray-100">
-                  <td className="border px-4 py-2">{row.description.replace(/\{COMPANY\}/g, data.companyName)}</td>
-                  <td><input type="number" value={row.value} onChange={(e) => handleChange(`tableRows[${index}].value`, +e.target.value)} className="border p-2 w-full text-center" /></td>
-                  <td><input type="text" value={row.cost} onChange={(e) => handleChange(`tableRows[${index}].cost`, e.target.value)} className="border p-2 w-full text-center" /></td>
-                  <td><input type="text" value={row.totalCost} onChange={(e) => handleChange(`tableRows[${index}].totalCost`, e.target.value)} className="border p-2 w-full text-center" /></td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        {/* Editable Text Sections */}
-        <div className="mt-10 space-y-6">
-          {["leadBenchmark", "primaryObjective", "secondaryObjective"].map((field) => (
-            <div key={field}>
-              <label className="text-lg font-bold text-gray-700 capitalize">{field.replace(/([A-Z])/g, " $1")}</label>
-              <textarea
-                value={data[field as keyof ProposalData] as string}
-                onChange={(e) => handleChange(field, e.target.value)}
-                className="border p-3 w-full rounded-lg focus:ring-2 focus:ring-[#0091d2] text-lg"
-                rows={4}
-              ></textarea>
-            </div>
-          ))}
-        </div>
-
-        {/* Save Button */}
-        <div className="mt-10 flex justify-center">
-          <button
-            onClick={handleSave}
-            className="bg-[#0091d2] px-8 py-4 text-white text-xl font-bold rounded-lg hover:bg-[#007bb8] shadow-lg transform hover:scale-105 transition-all"
-          >
-            Save Changes
-          </button>
-        </div>
-      </section>
+      {/* Floating save bar */}
+      <div className="fixed bottom-6 right-6 flex items-center gap-3 bg-white border border-neutral-200 rounded-pill shadow-lg px-3 py-2">
+        <span className="text-body-sm text-neutral-500 pl-3">Unsaved changes in this session</span>
+        <Button variant="primary" size="sm" onClick={handleSave} disabled={saving}>
+          {saving ? "Saving…" : "Save changes"}
+        </Button>
+      </div>
     </main>
   );
 }
