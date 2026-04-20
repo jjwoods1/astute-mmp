@@ -6,30 +6,43 @@ import { ReactNode } from "react";
 interface StaggerChildrenProps extends Omit<HTMLMotionProps<"div">, "initial" | "animate" | "variants"> {
   stagger?: number;
   delay?: number;
-  once?: boolean;
+  /**
+   * When true, wait until the element intersects the viewport before animating.
+   * Default false — animate on mount. See FadeIn for rationale.
+   */
+  scrollTriggered?: boolean;
   children: ReactNode;
 }
 
 export function StaggerChildren({
   stagger = 0.08,
   delay = 0,
-  once = true,
+  scrollTriggered = false,
   children,
   ...rest
 }: StaggerChildrenProps) {
+  const variants = {
+    hidden: {},
+    visible: {
+      transition: { staggerChildren: stagger, delayChildren: delay },
+    },
+  };
+
+  const motionProps = scrollTriggered
+    ? {
+        initial: "hidden" as const,
+        whileInView: "visible" as const,
+        viewport: { once: true, margin: "-80px" },
+        variants,
+      }
+    : {
+        initial: "hidden" as const,
+        animate: "visible" as const,
+        variants,
+      };
+
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once, margin: "-80px" }}
-      variants={{
-        hidden: {},
-        visible: {
-          transition: { staggerChildren: stagger, delayChildren: delay },
-        },
-      }}
-      {...rest}
-    >
+    <motion.div {...motionProps} {...rest}>
       {children}
     </motion.div>
   );

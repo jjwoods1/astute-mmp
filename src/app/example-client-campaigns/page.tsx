@@ -15,6 +15,33 @@ interface Campaign {
   conversionRate: string;
 }
 
+function CampaignLogo({ name, src }: { name: string; src: string }) {
+  const [failed, setFailed] = useState(false);
+  if (failed) {
+    const initials = name
+      .split(/\s+/)
+      .slice(0, 2)
+      .map((w) => w[0])
+      .join("")
+      .toUpperCase();
+    return (
+      <div className="w-20 h-20 rounded-pill bg-white border border-brand-200 flex items-center justify-center shadow-sm">
+        <span className="text-h1 text-brand-500 font-bold tracking-tight">{initials}</span>
+      </div>
+    );
+  }
+  return (
+    <Image
+      src={src}
+      alt={`${name} logo`}
+      width={160}
+      height={80}
+      className="max-w-[75%] max-h-[75%] object-contain"
+      onError={() => setFailed(true)}
+    />
+  );
+}
+
 export default function ExampleClientCampaigns() {
   const router = useRouter();
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
@@ -73,14 +100,7 @@ export default function ExampleClientCampaigns() {
                   >
                     {/* Logo panel */}
                     <div className="relative h-36 bg-gradient-to-br from-brand-50 to-brand-100 flex items-center justify-center p-6">
-                      <Image
-                        src={campaign.logo}
-                        alt={`${campaign.name} logo`}
-                        width={160}
-                        height={80}
-                        className="max-w-[75%] max-h-[75%] object-contain"
-                        priority
-                      />
+                      <CampaignLogo name={campaign.name} src={campaign.logo} />
                       {/* Soft gradient veil at the bottom for legibility */}
                       <div
                         className="absolute inset-x-0 bottom-0 h-12 pointer-events-none"
