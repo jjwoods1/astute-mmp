@@ -3,43 +3,57 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { toast } from "sonner";
+import { Button, Card, SectionHeader } from "@/components/ui";
+import { FadeIn } from "@/components/motion";
+import { errorMessage } from "@/lib/errors";
 
-export default function AdminHallOfFame() {
+const MONTHS = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
+const PLACEMENTS = ["1st", "2nd", "3rd"] as const;
+
+const START_YEAR = 2000;
+
+export default function AdminHallOfFamePage() {
   const router = useRouter();
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
   const [images, setImages] = useState<Record<string, string>>({});
+  const [loading, setLoading] = useState(true);
+  const [uploading, setUploading] = useState<Record<string, boolean>>({});
 
-  // Generate years dynamically (2000 - Current Year)
-  const years = Array.from({ length: new Date().getFullYear() - 2000 + 1 }, (_, i) => 2000 + i);
-
-  const months = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
-  const placements = ["1st", "2nd", "3rd"];
+  const years = Array.from({ length: selectedYear - START_YEAR + 1 }, (_, i) => START_YEAR + i);
 
   useEffect(() => {
-    loadExistingImages(selectedYear);
+    const loadImages = async () => {
+      setLoading(true);
+      try {
+        const res = await fetch(`/api/get-hof-images?year=${selectedYear}`);
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || "Failed to load images");
+        setImages(data);
+      } catch (error) {
+        console.error(error);
+        toast.error(`Failed to load images: ${errorMessage(error)}`);
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadImages();
   }, [selectedYear]);
 
-  const loadExistingImages = async (year: number) => {
-    try {
-      const response = await fetch(`/api/get-hof-images?year=${year}`);
-      const data = await response.json();
-
-      if (response.ok) {
-        setImages(data);
-      } else {
-        console.error("Error loading images:", data.error);
-      }
-    } catch (error) {
-      console.error("Error fetching images:", error);
-    }
-  };
-
-  const handleImageUpload = async (event: React.ChangeEvent<HTMLInputElement>, month: string, placement: string) => {
-    const file = event.target.files?.[0];
+  const handleImageUpload = async (
+    e: React.ChangeEvent<HTMLInputElement>,
+    month: string,
+    placement: (typeof PLACEMENTS)[number],
+  ) => {
+    const file = e.target.files?.[0];
     if (!file) return;
+
+    const cellKey = `${month.toLowerCase()}-${placement}`;
+    setUploading((prev) => ({ ...prev, [cellKey]: true }));
 
     const formData = new FormData();
     formData.append("file", file);
@@ -48,90 +62,106 @@ export default function AdminHallOfFame() {
     formData.append("year", selectedYear.toString());
 
     try {
-      const response = await fetch("/api/upload-hof", {
-        method: "POST",
-        body: formData,
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setImages((prev) => ({
-          ...prev,
-          [`${month.toLowerCase()}-${placement}`]: data.filePath + `?t=${Date.now()}`,
-        }));
-      } else {
-        console.error("Upload failed:", data.error);
-      }
+      const res = await fetch("/api/upload-hof", { method: "POST", body: formData });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Upload failed");
+      setImages((prev) => ({
+        ...prev,
+        [cellKey]: `${data.filePath}?t=${Date.now()}`,
+      }));
+      toast.success(`Uploaded ${month} ${placement}`);
     } catch (error) {
       console.error("Error uploading file:", error);
+      toast.error(`Upload failed: ${errorMessage(error)}`);
+    } finally {
+      setUploading((prev) => ({ ...prev, [cellKey]: false }));
     }
   };
 
   return (
-    <main className="min-h-screen bg-gray-100 p-10">
-      <h1 className="text-4xl font-bold text-blue-700 text-center mb-6">Admin - Hall of Fame</h1>
+    <main className="min-h-screen bg-neutral-50 font-ubuntu">
+      <div className="max-w-7xl mx-auto px-10 py-14">
+        <div className="flex items-end justify-between gap-6 flex-wrap mb-10">
+          <FadeIn y={0} duration={0.4}>
+            <SectionHeader eyebrow="Admin · Hall of Fame" title={`Manage images — ${selectedYear}`} />
+          </FadeIn>
+          <FadeIn y={0} duration={0.4} delay={0.1}>
+            <Button variant="secondary" size="sm" onClick={() => router.push("/admin/dashboard")}>
+              ← Dashboard
+            </Button>
+          </FadeIn>
+        </div>
 
-      <button
-        onClick={() => router.push("/admin/dashboard")}
-        className="mb-6 bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition"
-      >
-        ← Back to Admin Dashboard
-      </button>
+        {/* Year selector */}
+        <div className="mb-10 flex flex-wrap gap-2">
+          {years.map((year) => (
+            <button
+              key={year}
+              onClick={() => setSelectedYear(year)}
+              className={`px-3 py-1.5 rounded-pill text-body-sm font-medium border transition-all ${
+                selectedYear === year
+                  ? "bg-brand-500 text-white border-brand-500 shadow-sm"
+                  : "bg-white text-neutral-700 border-neutral-200 hover:border-brand-300 hover:text-brand-500"
+              }`}
+            >
+              {year}
+            </button>
+          ))}
+        </div>
 
-      {/* Year Selector */}
-      <div className="flex flex-wrap justify-center gap-2 mb-6">
-        {years.map((year) => (
-          <button
-            key={year}
-            onClick={() => setSelectedYear(year)}
-            className={`px-3 py-2 rounded-lg text-sm font-semibold ${
-              selectedYear === year ? "bg-blue-700 text-white" : "bg-white text-blue-700 border border-blue-700"
-            } hover:bg-blue-500 hover:text-white transition`}
-          >
-            {year}
-          </button>
-        ))}
-      </div>
-
-      {/* Hall of Fame Form */}
-      <div className="space-y-10">
-        {placements.map((placement) => (
-          <div key={placement}>
-            <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">{placement} Place - {selectedYear}</h2>
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center">
-              {months.map((month) => {
+        {PLACEMENTS.map((placement) => (
+          <section key={placement} className="mb-12">
+            <div className="text-label text-brand-500 uppercase mb-4">
+              {placement} Place — {selectedYear}
+            </div>
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              {MONTHS.map((month) => {
                 const key = `${month.toLowerCase()}-${placement}`;
+                const url = images[key];
+                const isUploading = uploading[key];
                 return (
-                  <div key={month} className="bg-white shadow-lg rounded-lg p-4 text-center">
-                    <h3 className="text-lg font-semibold mb-2">{month}</h3>
+                  <Card key={month} padded={false} className="p-4 text-center">
+                    <div className="text-body-sm font-medium text-neutral-900 mb-3">{month}</div>
                     <label className="block cursor-pointer">
                       <input
                         type="file"
                         accept="image/png"
                         className="hidden"
                         onChange={(e) => handleImageUpload(e, month, placement)}
+                        disabled={isUploading}
                       />
-                      <div className="border-2 border-dashed border-gray-400 p-4 rounded-lg text-gray-600 hover:border-blue-500 transition">
-                        Upload Image
+                      <div
+                        className={`border-2 border-dashed rounded-md py-3 text-body-sm transition-colors ${
+                          isUploading
+                            ? "border-brand-500 text-brand-500"
+                            : "border-neutral-300 text-neutral-500 hover:border-brand-500 hover:text-brand-500"
+                        }`}
+                      >
+                        {isUploading ? "Uploading…" : url ? "Replace" : "Upload image"}
                       </div>
                     </label>
-                    {images[key] ? (
-                      <Image
-                        src={images[key]}
-                        alt={`${month} ${placement}`}
-                        width={160}
-                        height={250}
-                        className="rounded-lg shadow-md mt-2"
-                      />
+                    {loading ? (
+                      <div className="mt-3 aspect-[2/3] rounded-md bg-neutral-100 animate-pulse" />
+                    ) : url ? (
+                      <div className="mt-3 relative aspect-[2/3] rounded-md bg-neutral-50 overflow-hidden">
+                        <Image
+                          src={url}
+                          alt={`${month} ${placement}`}
+                          fill
+                          sizes="160px"
+                          className="object-contain"
+                        />
+                      </div>
                     ) : (
-                      <p className="text-gray-500 mt-2">No image uploaded</p>
+                      <div className="mt-3 aspect-[2/3] rounded-md bg-neutral-50 border border-dashed border-neutral-200 flex items-center justify-center text-body-sm text-neutral-400">
+                        No image
+                      </div>
                     )}
-                  </div>
+                  </Card>
                 );
               })}
             </div>
-          </div>
+          </section>
         ))}
       </div>
     </main>

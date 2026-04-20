@@ -45,7 +45,7 @@ export default function HomePage() {
 
         {/* Middle: the moment */}
         <div className="py-10">
-          <div className="text-label text-brand-500 uppercase mb-6">— Since 2005</div>
+          <div className="text-label text-brand-500 uppercase mb-6">— Since 1997</div>
 
           <h1 className="text-display-lg lg:text-display-xl text-neutral-900 font-bold leading-[0.95] tracking-[-0.02em]">
             <TaglineReveal

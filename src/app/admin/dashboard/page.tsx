@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
+import { Button, Card, SectionHeader, StatTile } from "@/components/ui";
+import { FadeIn } from "@/components/motion";
 import { errorMessage } from "@/lib/errors";
 
 interface AdminUser {
@@ -13,12 +16,10 @@ interface AdminUser {
 export default function AdminDashboard() {
   const router = useRouter();
   const [users, setUsers] = useState<AdminUser[]>([]);
+  const [loading, setLoading] = useState(true);
   const [newUserEmail, setNewUserEmail] = useState("");
   const [newUserRole, setNewUserRole] = useState("user");
-
-  useEffect(() => {
-    fetchUsers();
-  }, []);
+  const [creating, setCreating] = useState(false);
 
   const fetchUsers = async () => {
     try {
@@ -28,125 +29,131 @@ export default function AdminDashboard() {
       setUsers(data || []);
     } catch (error) {
       console.error("Error fetching users:", error);
+      toast.error(`Failed to load users: ${errorMessage(error)}`);
+    } finally {
+      setLoading(false);
     }
   };
 
+  useEffect(() => {
+    fetchUsers();
+  }, []);
+
   const createUser = async () => {
     if (!newUserEmail.trim()) {
-      alert("Please enter an email address");
+      toast.error("Please enter an email address");
       return;
     }
-
+    setCreating(true);
     try {
       const res = await fetch("/api/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: newUserEmail, role: newUserRole }),
       });
-
       if (!res.ok) {
         const data = await res.json();
         throw new Error(data.error || "Failed to create user");
       }
-
-      alert(`User created! Email: ${newUserEmail}`);
+      toast.success(`User created: ${newUserEmail}`);
       setNewUserEmail("");
       fetchUsers();
     } catch (error) {
       console.error("Error creating user:", error);
-      alert("Failed to create user: " + errorMessage(error));
+      toast.error(`Failed to create user: ${errorMessage(error)}`);
+    } finally {
+      setCreating(false);
     }
   };
 
-  const removeUser = async (userId: number) => {
+  const removeUser = async (userId: number, email: string) => {
     try {
       const res = await fetch(`/api/users/${userId}`, { method: "DELETE" });
       if (!res.ok) throw new Error("Failed to remove user");
+      toast.success(`Removed ${email}`);
       fetchUsers();
     } catch (error) {
       console.error("Error removing user:", error);
+      toast.error(`Failed to remove user: ${errorMessage(error)}`);
     }
   };
 
+  const inputCls =
+    "bg-white border border-neutral-200 rounded-md px-3 py-2 text-body text-neutral-900 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors";
+
   return (
-    <main className="min-h-screen bg-gray-100 p-10">
-      <h1 className="text-3xl font-bold text-blue-700 mb-6">Admin Dashboard</h1>
-
-      {/* Total Users Count */}
-      <div className="bg-white p-4 shadow-lg rounded-lg mb-6">
-        <h2 className="text-xl font-semibold">Total Users: {users.length}</h2>
-      </div>
-
-      {/* User Management */}
-      <div className="bg-white p-6 shadow-lg rounded-lg mb-6">
-        <h2 className="text-2xl font-semibold mb-4">User Management</h2>
-
-        {/* Create User */}
-        <div className="flex gap-4 mb-4">
-          <input
-            type="email"
-            placeholder="User Email"
-            value={newUserEmail}
-            onChange={(e) => setNewUserEmail(e.target.value)}
-            className="border p-2 rounded w-full"
-          />
-          <select value={newUserRole} onChange={(e) => setNewUserRole(e.target.value)} className="border p-2 rounded">
-            <option value="user">User</option>
-            <option value="admin">Admin</option>
-          </select>
-          <button onClick={createUser} className="bg-green-500 text-white p-2 rounded">
-            Create User
-          </button>
+    <main className="min-h-screen bg-neutral-50 font-ubuntu">
+      <div className="max-w-6xl mx-auto px-10 py-14">
+        <div className="flex items-end justify-between gap-6 flex-wrap mb-10">
+          <FadeIn y={0} duration={0.4}>
+            <SectionHeader eyebrow="Admin" title="Dashboard" />
+          </FadeIn>
+          <FadeIn y={0} duration={0.4} delay={0.1}>
+            <div className="flex items-center gap-2 flex-wrap">
+              <Button variant="secondary" size="sm" onClick={() => router.push("/admin")}>← Admin</Button>
+              <Button variant="ghost" size="sm" onClick={() => router.push("/admin/create-video-testimonial")}>Video Testimonial</Button>
+              <Button variant="ghost" size="sm" onClick={() => router.push("/admin/create-written-testimonial")}>Written Testimonial</Button>
+              <Button variant="ghost" size="sm" onClick={() => router.push("/admin/hall-of-fame")}>Hall of Fame</Button>
+            </div>
+          </FadeIn>
         </div>
 
-        {/* Users List */}
-        <table className="w-full border-collapse border border-gray-300">
-          <thead>
-            <tr className="bg-gray-200">
-              <th className="border p-2">Email</th>
-              <th className="border p-2">Role</th>
-              <th className="border p-2">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {users.map((user) => (
-              <tr key={user.id} className="border">
-                <td className="border p-2">{user.email}</td>
-                <td className="border p-2">{user.role}</td>
-                <td className="border p-2 flex gap-2">
-                  <button
-                    onClick={() => removeUser(user.id)}
-                    className="bg-red-500 text-white px-3 py-1 rounded"
-                  >
-                    Remove
-                  </button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+        <Card className="mb-6">
+          <StatTile value={users.length} label="Total admin users" size="xl" />
+        </Card>
 
-      {/* Navigation to Other Admin Pages */}
-      <div className="flex gap-4">
-        <button
-          onClick={() => router.push("/admin/create-video-testimonial")}
-          className="bg-blue-500 text-white p-3 rounded-lg"
-        >
-          Create Video Testimonial
-        </button>
-        <button
-          onClick={() => router.push("/admin/create-written-testimonial")}
-          className="bg-blue-500 text-white p-3 rounded-lg"
-        >
-          Create Written Testimonial
-        </button>
-        <button
-          onClick={() => router.push("/admin/hall-of-fame")}
-          className="bg-purple-500 text-white p-3 rounded-lg"
-        >
-          Hall of Fame
-        </button>
+        <Card>
+          <div className="text-label text-brand-500 uppercase mb-5">User Management</div>
+
+          <div className="flex gap-3 mb-5 flex-wrap">
+            <input
+              type="email"
+              placeholder="Email address"
+              value={newUserEmail}
+              onChange={(e) => setNewUserEmail(e.target.value)}
+              className={`${inputCls} flex-1 min-w-[240px]`}
+            />
+            <select value={newUserRole} onChange={(e) => setNewUserRole(e.target.value)} className={inputCls}>
+              <option value="user">User</option>
+              <option value="admin">Admin</option>
+            </select>
+            <Button variant="primary" size="md" onClick={createUser} disabled={creating}>
+              {creating ? "Creating…" : "Create user"}
+            </Button>
+          </div>
+
+          {loading ? (
+            <div className="flex flex-col gap-2">
+              {Array.from({ length: 3 }).map((_, i) => (
+                <div key={i} className="h-12 rounded-md bg-neutral-100 animate-pulse" />
+              ))}
+            </div>
+          ) : users.length === 0 ? (
+            <div className="text-body text-neutral-500 py-8 text-center">No users yet.</div>
+          ) : (
+            <div>
+              <div className="flex items-center text-label text-neutral-400 uppercase px-4 py-3 border-b border-neutral-200">
+                <div className="flex-1">Email</div>
+                <div className="w-24">Role</div>
+                <div className="w-24 text-right">Actions</div>
+              </div>
+              {users.map((user) => (
+                <div key={user.id} className="flex items-center px-4 py-3 border-b border-neutral-200 hover:bg-neutral-50 transition-colors">
+                  <div className="flex-1 text-body text-neutral-800 min-w-0 truncate">{user.email}</div>
+                  <div className="w-24 text-body-sm text-neutral-600 capitalize">{user.role}</div>
+                  <div className="w-24 flex justify-end">
+                    <button
+                      onClick={() => removeUser(user.id, user.email)}
+                      className="text-body-sm text-red-600 hover:text-red-700 font-medium"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </Card>
       </div>
     </main>
   );

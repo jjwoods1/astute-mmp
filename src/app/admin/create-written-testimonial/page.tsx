@@ -2,6 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+import { toast } from "sonner";
+import { Button, Card, SectionHeader } from "@/components/ui";
+import { FadeIn } from "@/components/motion";
 import { errorMessage } from "@/lib/errors";
 
 interface CompanyLite {
@@ -10,7 +14,9 @@ interface CompanyLite {
   companyTag: string;
 }
 
-export default function CreateWrittenTestimonial() {
+const MAX_IMAGE_MB = 10;
+
+export default function CreateWrittenTestimonialPage() {
   const router = useRouter();
 
   const [companies, setCompanies] = useState<CompanyLite[]>([]);
@@ -18,11 +24,10 @@ export default function CreateWrittenTestimonial() {
   const [newCompanyName, setNewCompanyName] = useState("");
   const [testimonialDate, setTestimonialDate] = useState("");
   const [testimonialImage, setTestimonialImage] = useState<File | null>(null);
+  const [testimonialPreview, setTestimonialPreview] = useState<string | null>(null);
   const [companyLogo, setCompanyLogo] = useState<File | null>(null);
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [successMessage, setSuccessMessage] = useState<string | null>(null);
+  const [logoPreview, setLogoPreview] = useState<string | null>(null);
+  const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
     const fetchCompanies = async () => {
@@ -33,21 +38,25 @@ export default function CreateWrittenTestimonial() {
         setCompanies(data || []);
       } catch (error) {
         console.error("Error fetching companies:", error);
+        toast.error(`Failed to load companies: ${errorMessage(error)}`);
       }
     };
-
     fetchCompanies();
   }, []);
 
-  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>, type: "testimonial" | "logo") => {
+  const handleFile = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    setFile: (f: File | null) => void,
+    setPreview: (s: string | null) => void,
+  ) => {
     const file = e.target.files?.[0] || null;
-    if (file) {
-      if (type === "testimonial") {
-        setTestimonialImage(file);
-      } else if (type === "logo") {
-        setCompanyLogo(file);
-      }
+    if (!file) return;
+    if (file.size > MAX_IMAGE_MB * 1024 * 1024) {
+      toast.error(`Image must be under ${MAX_IMAGE_MB}MB`);
+      return;
     }
+    setFile(file);
+    setPreview(URL.createObjectURL(file));
   };
 
   const resetForm = () => {
@@ -55,38 +64,32 @@ export default function CreateWrittenTestimonial() {
     setNewCompanyName("");
     setTestimonialDate("");
     setTestimonialImage(null);
+    setTestimonialPreview(null);
     setCompanyLogo(null);
-    setSuccessMessage("Image testimonial added successfully!");
+    setLogoPreview(null);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setError(null);
-    setSuccessMessage(null);
+    setSubmitting(true);
 
     try {
       let companyToUse = selectedCompany;
-      let companyLogoFilename = "";
-      let companyId = null;
+      let companyId: number | null = null;
 
       if (selectedCompany === "other") {
         if (!newCompanyName.trim() || !companyLogo) {
-          setError("Please enter a company name and upload a company logo.");
-          setIsSubmitting(false);
+          toast.error("Enter a company name and upload a logo.");
+          setSubmitting(false);
           return;
         }
 
-        // Upload company logo
         const logoFormData = new FormData();
         logoFormData.append("file", companyLogo);
         logoFormData.append("filePath", `Company-Logos/${companyLogo.name}`);
-
         await fetch("/api/upload-local", { method: "POST", body: logoFormData });
 
-        companyLogoFilename = `/images/Company-Logos/${companyLogo.name}`;
-
-        // Add new company to database
+        const companyLogoFilename = `/images/Company-Logos/${companyLogo.name}`;
         const companyRes = await fetch("/api/companies", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -97,7 +100,6 @@ export default function CreateWrittenTestimonial() {
             hasWrittenTestimonial: true,
           }),
         });
-
         if (!companyRes.ok) throw new Error("Failed to create company");
         const newCompany = await companyRes.json();
 
@@ -105,29 +107,23 @@ export default function CreateWrittenTestimonial() {
         companyId = newCompany.id;
         setCompanies((prev) => [...prev, newCompany]);
       } else {
-        // Get the ID of the selected company
-        const selectedCompanyDoc = companies.find((c) => c.name === selectedCompany);
-        if (selectedCompanyDoc) {
-          companyId = selectedCompanyDoc.id;
-        }
+        const match = companies.find((c) => c.name === selectedCompany);
+        if (match) companyId = match.id;
       }
 
       if (!companyToUse || !testimonialDate || !testimonialImage) {
-        setError("All fields including the testimonial image are required.");
-        setIsSubmitting(false);
+        toast.error("All fields including the testimonial image are required.");
+        setSubmitting(false);
         return;
       }
 
-      // Upload testimonial image
       const testimonialFormData = new FormData();
       testimonialFormData.append("file", testimonialImage);
       testimonialFormData.append("filePath", `written-testimonial/${testimonialImage.name}`);
-
       await fetch("/api/upload-local", { method: "POST", body: testimonialFormData });
 
       const testimonialImageUrl = `/images/written-testimonial/${testimonialImage.name}`;
 
-      // Store testimonial in database
       const testimonialRes = await fetch("/api/written-testimonials", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -138,14 +134,12 @@ export default function CreateWrittenTestimonial() {
           testimonialImageUrl,
         }),
       });
-
       if (!testimonialRes.ok) throw new Error("Failed to create testimonial");
 
-      // Update existing company to set has_written_testimonial: true
       if (companyId && selectedCompany !== "other") {
-        const selectedCompanyDoc = companies.find((c) => c.id === companyId);
-        if (selectedCompanyDoc) {
-          await fetch(`/api/companies/${selectedCompanyDoc.companyTag}`, {
+        const match = companies.find((c) => c.id === companyId);
+        if (match) {
+          await fetch(`/api/companies/${match.companyTag}`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ hasWrittenTestimonial: true }),
@@ -153,57 +147,117 @@ export default function CreateWrittenTestimonial() {
         }
       }
 
+      toast.success("Written testimonial added");
       resetForm();
     } catch (error) {
       console.error("Error:", error);
-      setError(errorMessage(error) || "Failed to upload testimonial.");
+      toast.error(`Upload failed: ${errorMessage(error)}`);
+    } finally {
+      setSubmitting(false);
     }
-
-    setIsSubmitting(false);
   };
 
+  const inputCls =
+    "bg-white border border-neutral-200 rounded-md px-3 py-2 text-body text-neutral-900 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors w-full";
+  const labelCls = "text-label text-neutral-500 uppercase mb-2 block";
+  const fileCls = `${inputCls} file:mr-4 file:rounded-md file:border-0 file:bg-brand-50 file:text-brand-700 file:px-3 file:py-1 file:font-medium file:cursor-pointer`;
+
   return (
-    <main className="min-h-screen bg-gray-100 py-10 px-4 md:px-10">
-      <div className="max-w-3xl mx-auto bg-white p-8 shadow-lg rounded-lg">
-        <h1 className="text-3xl font-bold text-blue-700 mb-6 text-center">Create Written Testimonial</h1>
+    <main className="min-h-screen bg-neutral-50 font-ubuntu">
+      <div className="max-w-3xl mx-auto px-10 py-14">
+        <div className="flex items-end justify-between gap-6 flex-wrap mb-10">
+          <FadeIn y={0} duration={0.4}>
+            <SectionHeader eyebrow="Admin · Upload" title="Create Written Testimonial" />
+          </FadeIn>
+          <FadeIn y={0} duration={0.4} delay={0.1}>
+            <Button variant="secondary" size="sm" onClick={() => router.push("/admin/dashboard")}>
+              ← Dashboard
+            </Button>
+          </FadeIn>
+        </div>
 
-        <button
-          onClick={() => router.push("/admin/dashboard")}
-          className="mb-6 bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition"
-        >
-          ← Back to Admin Dashboard
-        </button>
+        <Card>
+          <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+            <div>
+              <label className={labelCls}>Company</label>
+              <select
+                value={selectedCompany}
+                onChange={(e) => setSelectedCompany(e.target.value)}
+                required
+                className={inputCls}
+              >
+                <option value="" disabled>Select a company</option>
+                {companies.map((c) => (
+                  <option key={c.id} value={c.name}>{c.name}</option>
+                ))}
+                <option value="other">Other (new company)</option>
+              </select>
+            </div>
 
-        {error && <p className="text-red-600 text-center mb-4">{error}</p>}
-        {successMessage && <p className="text-green-600 text-center mb-4">{successMessage}</p>}
+            {selectedCompany === "other" ? (
+              <div className="flex flex-col gap-5 pl-4 border-l-2 border-brand-200">
+                <div>
+                  <label className={labelCls}>New company name</label>
+                  <input
+                    type="text"
+                    placeholder="Company name"
+                    value={newCompanyName}
+                    onChange={(e) => setNewCompanyName(e.target.value)}
+                    required
+                    className={inputCls}
+                  />
+                </div>
+                <div>
+                  <label className={labelCls}>Company logo</label>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={(e) => handleFile(e, setCompanyLogo, setLogoPreview)}
+                    required
+                    className={fileCls}
+                  />
+                  {logoPreview ? (
+                    <div className="mt-3 relative w-40 h-24 rounded-md border border-neutral-200 bg-neutral-50 overflow-hidden">
+                      <Image src={logoPreview} alt="Logo preview" fill unoptimized className="object-contain p-2" />
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+            ) : null}
 
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <label className="block font-semibold">Select Company</label>
-          <select className="border p-3 rounded-lg w-full" value={selectedCompany} onChange={(e) => setSelectedCompany(e.target.value)} required>
-            <option value="" disabled>Select a company</option>
-            {companies.map((company) => (
-              <option key={company.id} value={company.name}>{company.name}</option>
-            ))}
-            <option value="other">Other</option>
-          </select>
+            <div>
+              <label className={labelCls}>Date of testimonial</label>
+              <input
+                type="date"
+                value={testimonialDate}
+                onChange={(e) => setTestimonialDate(e.target.value)}
+                required
+                className={inputCls}
+              />
+            </div>
 
-          {selectedCompany === "other" && (
-            <>
-              <input type="text" placeholder="Company Name" value={newCompanyName} onChange={(e) => setNewCompanyName(e.target.value)} required className="border p-3 rounded-lg w-full" />
-              <input type="file" accept="image/*" onChange={(e) => handleImageChange(e, "logo")} required className="border p-2 rounded w-full" />
-            </>
-          )}
+            <div>
+              <label className={labelCls}>Testimonial image</label>
+              <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => handleFile(e, setTestimonialImage, setTestimonialPreview)}
+                required
+                className={fileCls}
+              />
+              {testimonialPreview ? (
+                <div className="mt-3 relative w-full max-w-md aspect-[4/3] rounded-md border border-neutral-200 bg-neutral-50 overflow-hidden">
+                  <Image src={testimonialPreview} alt="Testimonial preview" fill unoptimized className="object-contain" />
+                </div>
+              ) : null}
+              <p className="mt-1 text-body-sm text-neutral-500">Max {MAX_IMAGE_MB}MB.</p>
+            </div>
 
-          <label className="block font-semibold">Date of Testimonial</label>
-          <input type="date" value={testimonialDate} onChange={(e) => setTestimonialDate(e.target.value)} required className="border p-3 rounded-lg w-full" />
-
-          <label className="block font-semibold">Upload Testimonial Image</label>
-          <input type="file" accept="image/*" onChange={(e) => handleImageChange(e, "testimonial")} required className="border p-2 rounded w-full" />
-
-          <button type="submit" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition w-full" disabled={isSubmitting}>
-            {isSubmitting ? "Submitting..." : "Add Image Testimonial"}
-          </button>
-        </form>
+            <Button type="submit" variant="primary" size="md" disabled={submitting} className="self-start">
+              {submitting ? "Uploading…" : "Add image testimonial"}
+            </Button>
+          </form>
+        </Card>
       </div>
     </main>
   );
