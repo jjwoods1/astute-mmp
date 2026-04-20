@@ -155,9 +155,10 @@ export function ManagedProspectStackDiagram({ className }: Props) {
         );
       })}
 
-      {/* Left feedback loop — exits funnel bottom-left, wraps round, re-enters top-left */}
+      {/* Left feedback loop — exits the Sales Cycle pill's left edge,
+          wraps round the left margin, re-enters the funnel top-left. */}
       <motion.path
-        d={`M ${FUNNEL_LEFT_BOTTOM} ${FUNNEL_BOTTOM} L 160 ${FUNNEL_BOTTOM} Q 120 ${FUNNEL_BOTTOM} 120 ${FUNNEL_BOTTOM - 40} L 120 90 Q 120 50 160 50 L 198 50`}
+        d={`M ${FUNNEL_CENTER_X - PILL_W / 2} ${SALES_CYCLE_Y} L 160 ${SALES_CYCLE_Y} Q 120 ${SALES_CYCLE_Y} 120 ${SALES_CYCLE_Y - 40} L 120 90 Q 120 50 160 50 L 198 50`}
         fill="none"
         stroke={BRAND}
         strokeWidth={3}
@@ -166,7 +167,7 @@ export function ManagedProspectStackDiagram({ className }: Props) {
         markerEnd="url(#mps-arrow-brand)"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.9, duration: 0.5, ease: "easeOut" }}
+        transition={{ delay: 1.25, duration: 0.5, ease: "easeOut" }}
       />
 
       {/* Right bracket — spans full funnel height; label "Client Feedback" */}
