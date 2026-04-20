@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button, Card, ChapterRail, SectionHeader } from "@/components/ui";
 import { FadeIn } from "@/components/motion";
 import { CampaignInProgressDiagram } from "@/components/diagrams/CampaignInProgressDiagram";
+import { ManagedProspectStackDiagram } from "@/components/diagrams/ManagedProspectStackDiagram";
 
 // ============ CAMPAIGN DATA KEY CONSIDERATIONS ============
 const newCompanyDataSlides = [
@@ -355,14 +356,8 @@ export default function ProcessPage() {
 
       case "managed-prospect":
         return (
-          <Card className="max-w-5xl overflow-hidden" padded={false}>
-            <Image
-              src="/images/Managed Prospect stack infographic.png"
-              alt="Managed Prospect Stack Infographic"
-              width={900}
-              height={600}
-              className="w-full h-auto"
-            />
+          <Card className="max-w-3xl">
+            <ManagedProspectStackDiagram />
           </Card>
         );
 
