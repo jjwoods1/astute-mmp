@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button, Card, ChapterRail, SectionHeader } from "@/components/ui";
 import { FadeIn } from "@/components/motion";
+import { CampaignInProgressDiagram } from "@/components/diagrams/CampaignInProgressDiagram";
 
 // ============ CAMPAIGN DATA KEY CONSIDERATIONS ============
 const newCompanyDataSlides = [
@@ -267,14 +268,8 @@ export default function ProcessPage() {
 
       case "campaign-in-progress":
         return (
-          <Card className="max-w-5xl overflow-hidden" padded={false}>
-            <Image
-              src="/images/Campaign In Progress Image.png"
-              alt="Campaign In Progress Flowchart"
-              width={1000}
-              height={750}
-              className="w-full h-auto"
-            />
+          <Card className="max-w-5xl">
+            <CampaignInProgressDiagram />
           </Card>
         );
 
