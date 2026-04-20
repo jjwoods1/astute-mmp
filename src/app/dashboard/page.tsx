@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import { supabase } from "@/lib/supabase";
+import Link from "next/link";
 
 interface ExcludedCompany {
   id: number;
@@ -10,10 +9,9 @@ interface ExcludedCompany {
 }
 
 export default function UserDashboard() {
-  const [excludedCompanies, setExcludedCompanies] = useState<string[]>([]);
+  const [excludedCompanies, setExcludedCompanies] = useState<ExcludedCompany[]>([]);
   const [newCompany, setNewCompany] = useState("");
   const [error, setError] = useState<string | null>(null);
-  const router = useRouter();
 
   useEffect(() => {
     fetchExcludedCompanies();
@@ -21,12 +19,10 @@ export default function UserDashboard() {
 
   const fetchExcludedCompanies = async () => {
     try {
-      const { data, error } = await supabase
-        .from('excluded_companies')
-        .select('*');
-
-      if (error) throw error;
-      setExcludedCompanies((data || []).map((r: ExcludedCompany) => r.company));
+      const res = await fetch("/api/excluded-companies");
+      if (!res.ok) throw new Error("Failed to fetch");
+      const data = await res.json();
+      setExcludedCompanies(data || []);
     } catch (err) {
       console.error("Error fetching excluded companies:", err);
       setError("Error fetching company exclusions. Please try again.");
@@ -37,37 +33,36 @@ export default function UserDashboard() {
     if (!newCompany.trim()) return;
 
     try {
-      const { error } = await supabase
-        .from('excluded_companies')
-        .insert({ company: newCompany.trim() });
+      const res = await fetch("/api/excluded-companies", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ company: newCompany.trim() }),
+      });
 
-      if (error) {
-        if (error.code === '23505') {
+      if (!res.ok) {
+        if (res.status === 409) {
           setError("Company already exists in exclusion list");
         } else {
-          throw error;
+          throw new Error("Failed to add company");
         }
         return;
       }
 
-      setExcludedCompanies((prev) => [...prev, newCompany.trim()]);
+      const created = await res.json();
+      setExcludedCompanies((prev) => [...prev, created]);
       setNewCompany("");
       setError(null);
-    } catch (err) {
+    } catch {
       setError("Failed to add company.");
     }
   };
 
-  const removeCompany = async (company: string) => {
+  const removeCompany = async (id: number) => {
     try {
-      const { error } = await supabase
-        .from('excluded_companies')
-        .delete()
-        .eq('company', company);
-
-      if (error) throw error;
-      setExcludedCompanies((prev) => prev.filter((c) => c !== company));
-    } catch (err) {
+      const res = await fetch(`/api/excluded-companies/${id}`, { method: "DELETE" });
+      if (!res.ok) throw new Error("Failed to remove company");
+      setExcludedCompanies((prev) => prev.filter((c) => c.id !== id));
+    } catch {
       setError("Failed to remove company.");
     }
   };
@@ -79,10 +74,10 @@ export default function UserDashboard() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-bold">User Dashboard</h1>
           <nav className="space-x-6">
-            <a href="/" className="text-white text-lg hover:underline">Home</a>
-            <a href="/dashboard/astute-proposal" className="text-white text-lg hover:underline">
+            <Link href="/" className="text-white text-lg hover:underline">Home</Link>
+            <Link href="/dashboard/astute-proposal" className="text-white text-lg hover:underline">
               Edit Channel Lead Generation Proposal
-            </a>
+            </Link>
           </nav>
         </div>
       </header>
@@ -113,11 +108,11 @@ export default function UserDashboard() {
         {/* Excluded Companies List */}
         <div className="mt-8 space-y-3">
           {excludedCompanies.length > 0 ? (
-            excludedCompanies.map((company) => (
-              <div key={company} className="flex justify-between items-center bg-white p-4 rounded-lg shadow-md border border-gray-200">
-                <span className="text-gray-800 text-lg">{company}</span>
+            excludedCompanies.map((item) => (
+              <div key={item.id} className="flex justify-between items-center bg-white p-4 rounded-lg shadow-md border border-gray-200">
+                <span className="text-gray-800 text-lg">{item.company}</span>
                 <button
-                  onClick={() => removeCompany(company)}
+                  onClick={() => removeCompany(item.id)}
                   className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-shadow shadow-md hover:shadow-lg"
                 >
                   Remove
@@ -131,16 +126,16 @@ export default function UserDashboard() {
 
         {/* Navigation Buttons */}
         <div className="mt-10 flex gap-6">
-          <a href="/dashboard/astute-proposal">
+          <Link href="/dashboard/astute-proposal">
             <button className="bg-[#0091d2] text-white px-6 py-3 rounded-lg hover:bg-[#007bb8] transition-shadow shadow-md hover:shadow-lg text-lg">
               Edit Channel Lead Generation Proposal
             </button>
-          </a>
-          <a href="/">
+          </Link>
+          <Link href="/">
             <button className="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-shadow shadow-md hover:shadow-lg text-lg">
               Back to Home
             </button>
-          </a>
+          </Link>
         </div>
       </section>
     </main>

@@ -1,20 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 export default function TargetDatabaseSlide5() {
   const router = useRouter();
   const currentSlide = 5;
-  const [boxHeight, setBoxHeight] = useState<number | null>(null);
-
-  useEffect(() => {
-    const contentBox = document.getElementById("content-box");
-    if (contentBox) {
-      setBoxHeight(contentBox.clientHeight);
-    }
-  }, []);
 
   return (
     <main

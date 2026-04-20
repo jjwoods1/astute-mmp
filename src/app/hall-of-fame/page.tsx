@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function HallOfFame() {
   const [selectedYear, setSelectedYear] = useState(2025);
@@ -166,23 +167,50 @@ export default function HallOfFame() {
   return (
     <main className="min-h-screen bg-[#0091d2] p-6 font-ubuntu text-white relative overflow-hidden">
       {/* Back to Reception Button */}
-      <div className="absolute top-4 left-4 z-50">
+      <motion.div
+        className="absolute top-4 left-4 z-50"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.4 }}
+      >
         <Link href="/reception">
-          <button className="px-4 py-2 bg-white text-[#0091d2] font-semibold rounded-lg hover:bg-[#007bb5] hover:text-white transition shadow-md">
+          <motion.button
+            className="px-4 py-2 bg-white text-[#0091d2] font-semibold rounded-lg hover:bg-[#007bb5] hover:text-white transition shadow-md"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
             ← Back to Reception
-          </button>
+          </motion.button>
         </Link>
-      </div>
+      </motion.div>
 
-      <h1 className="text-4xl font-bold text-center mb-4 mt-2">Hall of Fame</h1>
+      <motion.h1
+        className="text-4xl font-bold text-center mb-4 mt-2"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Hall of Fame
+      </motion.h1>
 
       {/* Timeline Slider */}
-      <div className="max-w-4xl mx-auto mb-6">
+      <motion.div
+        className="max-w-4xl mx-auto mb-6"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         {/* Year Display */}
         <div className="text-center mb-4">
-          <span className="text-6xl font-bold text-white drop-shadow-lg transition-all duration-300">
+          <motion.span
+            key={selectedYear}
+            className="text-6xl font-bold text-white drop-shadow-lg inline-block"
+            initial={{ opacity: 0, scale: 0.8, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          >
             {selectedYear}
-          </span>
+          </motion.span>
         </div>
 
         {/* Slider Track */}
@@ -232,22 +260,26 @@ export default function HallOfFame() {
 
         {/* Arrow Buttons */}
         <div className="flex justify-between mt-10">
-          <button
+          <motion.button
             onClick={() => handleYearChange(Math.max(selectedYear - 1, startYear))}
             disabled={selectedYear === startYear}
             className="px-6 py-2 bg-white text-[#0091d2] font-bold rounded-lg hover:bg-[#007bb5] hover:text-white transition disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
+            whileHover={{ scale: 1.05, x: -3 }}
+            whileTap={{ scale: 0.95 }}
           >
             ← Previous Year
-          </button>
-          <button
+          </motion.button>
+          <motion.button
             onClick={() => handleYearChange(Math.min(selectedYear + 1, endYear))}
             disabled={selectedYear === endYear}
             className="px-6 py-2 bg-white text-[#0091d2] font-bold rounded-lg hover:bg-[#007bb5] hover:text-white transition disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
+            whileHover={{ scale: 1.05, x: 3 }}
+            whileTap={{ scale: 0.95 }}
           >
             Next Year →
-          </button>
+          </motion.button>
         </div>
-      </div>
+      </motion.div>
 
       {/* Hall of Fame Grid with Flip Animation */}
       <div className="space-y-8">
@@ -268,9 +300,6 @@ export default function HallOfFame() {
                     key={month}
                     className="flex flex-col items-center group"
                   >
-                    <span className="text-xs text-white/80 mb-1 font-medium">
-                      {month.slice(0, 3)}
-                    </span>
                     {/* 3D Flip Card Container */}
                     <div
                       className="relative w-full aspect-[2/3]"
@@ -330,29 +359,42 @@ export default function HallOfFame() {
       </div>
 
       {/* Modal for Image Preview */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black/90 flex justify-center items-center z-50 backdrop-blur-sm"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative p-4 max-w-full max-h-full animate-fade-in">
-            <button
-              className="absolute top-2 right-2 text-white text-3xl hover:text-gray-300 transition z-10"
-              onClick={() => setSelectedImage(null)}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            className="fixed inset-0 bg-black/90 flex justify-center items-center z-50 backdrop-blur-sm"
+            onClick={() => setSelectedImage(null)}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <motion.div
+              className="relative p-4 max-w-full max-h-full"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
             >
-              ×
-            </button>
-            <Image
-              src={selectedImage}
-              alt="Enlarged Image"
-              width={900}
-              height={1200}
-              quality={100}
-              className="rounded-lg shadow-2xl max-w-[90vw] max-h-[90vh] object-contain"
-            />
-          </div>
-        </div>
-      )}
+              <motion.button
+                className="absolute top-2 right-2 text-white text-3xl hover:text-gray-300 transition z-10"
+                onClick={() => setSelectedImage(null)}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                ×
+              </motion.button>
+              <Image
+                src={selectedImage}
+                alt="Enlarged Image"
+                width={900}
+                height={1200}
+                quality={100}
+                className="rounded-lg shadow-2xl max-w-[90vw] max-h-[90vh] object-contain"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Custom Styles */}
       <style jsx global>{`

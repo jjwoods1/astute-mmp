@@ -79,7 +79,7 @@ export default function MarketPlatformApproach() {
           <div className="bg-white p-8 rounded-b-lg shadow-lg text-left border border-t-0 border-gray-300">
             <ul className="list-disc list-inside text-lg space-y-2">
               <li>Astute Client and Partners develop sales opportunities to closure.</li>
-              <li>'Pass-back' lost sales opportunities to Market Platform.</li>
+              <li>&lsquo;Pass-back&rsquo; lost sales opportunities to Market Platform.</li>
             </ul>
           </div>
         </div>

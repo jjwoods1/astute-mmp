@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import path from "path";
 import fs from "fs/promises";
+import { errorMessage } from "@/lib/errors";
 
 // Define storage paths
 const videoStorage = path.join(process.cwd(), "public/Client-Testimonial-Videos/");
@@ -69,9 +70,9 @@ export async function POST(req: NextRequest) {
       { status: 200 }
     );
 
-  } catch (error: any) {
+  } catch (error) {
     console.error("Upload error:", error);
-    return NextResponse.json({ message: "Upload failed", error: error.message }, { status: 500 });
+    return NextResponse.json({ message: "Upload failed", error: errorMessage(error) }, { status: 500 });
   }
 }
 

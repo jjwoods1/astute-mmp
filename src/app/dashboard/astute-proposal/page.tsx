@@ -1,13 +1,28 @@
 "use client";
 import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabase";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { errorMessage } from "@/lib/errors";
+
+interface TableRow {
+  description: string;
+  value: number;
+  cost: string;
+  totalCost: string;
+}
+
+interface ProposalData {
+  companyName: string;
+  tableRows: TableRow[];
+  totalCampaignCost: string;
+  leadBenchmark: string;
+  primaryObjective: string;
+  secondaryObjective: string;
+}
 
 export default function ChannelLeadGenerationProposal() {
-  const router = useRouter();
   const [loading, setLoading] = useState(true);
   const [proposalId, setProposalId] = useState<number | null>(null);
-  const [data, setData] = useState({
+  const [data, setData] = useState<ProposalData>({
     companyName: "8x8",
     tableRows: [
       { description: "{COMPANY} Confirmation Email Creation", value: 1, cost: "£150.00", totalCost: "£150.00" },
@@ -25,67 +40,71 @@ export default function ChannelLeadGenerationProposal() {
   });
 
   useEffect(() => {
+    const fetchProposalData = async () => {
+      try {
+        const res = await fetch("/api/proposals");
+        if (!res.ok) throw new Error("Failed to fetch");
+        const proposalData = await res.json();
+
+        if (proposalData) {
+          setProposalId(proposalData.id);
+          setData((prev) => ({
+            companyName: proposalData.companyName || prev.companyName,
+            tableRows: proposalData.tableRows || prev.tableRows,
+            totalCampaignCost: proposalData.totalCampaignCost?.toString() || prev.totalCampaignCost,
+            leadBenchmark: proposalData.leadBenchmark || prev.leadBenchmark,
+            primaryObjective: proposalData.primaryObjective || prev.primaryObjective,
+            secondaryObjective: proposalData.secondaryObjective || prev.secondaryObjective,
+          }));
+        }
+      } catch (err) {
+        console.error("Error fetching proposal:", err);
+      }
+      setLoading(false);
+    };
+
     fetchProposalData();
   }, []);
 
-  const fetchProposalData = async () => {
-    // Fetch the first proposal (since there's no auth)
-    const { data: proposalData, error } = await supabase
-      .from('proposals')
-      .select('*')
-      .limit(1)
-      .single();
-
-    if (!error && proposalData) {
-      setProposalId(proposalData.id);
-      setData({
-        companyName: proposalData.company_name || data.companyName,
-        tableRows: proposalData.table_rows || data.tableRows,
-        totalCampaignCost: proposalData.total_campaign_cost?.toString() || data.totalCampaignCost,
-        leadBenchmark: proposalData.lead_benchmark || data.leadBenchmark,
-        primaryObjective: proposalData.primary_objective || data.primaryObjective,
-        secondaryObjective: proposalData.secondary_objective || data.secondaryObjective,
-      });
-    }
-    setLoading(false);
-  };
-
-  const handleChange = (field: string, value: any) => {
-    setData({ ...data, [field]: value });
+  const handleChange = (field: string, value: string | number | TableRow[]) => {
+    setData((prev) => ({ ...prev, [field]: value }));
   };
 
   const handleSave = async () => {
     const proposalData = {
-      user_id: 'default',
-      company_name: data.companyName,
-      table_rows: data.tableRows,
-      total_campaign_cost: data.totalCampaignCost,
-      lead_benchmark: data.leadBenchmark,
-      primary_objective: data.primaryObjective,
-      secondary_objective: data.secondaryObjective,
+      companyName: data.companyName,
+      tableRows: data.tableRows,
+      totalCampaignCost: data.totalCampaignCost,
+      leadBenchmark: data.leadBenchmark,
+      primaryObjective: data.primaryObjective,
+      secondaryObjective: data.secondaryObjective,
     };
 
-    let error;
-    if (proposalId) {
-      // Update existing
-      const result = await supabase
-        .from('proposals')
-        .update(proposalData)
-        .eq('id', proposalId);
-      error = result.error;
-    } else {
-      // Insert new
-      const result = await supabase
-        .from('proposals')
-        .insert(proposalData);
-      error = result.error;
-    }
+    try {
+      let res;
+      if (proposalId) {
+        res = await fetch(`/api/proposals/${proposalId}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(proposalData),
+        });
+      } else {
+        res = await fetch("/api/proposals", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...proposalData, userId: "default" }),
+        });
+      }
 
-    if (error) {
-      console.error("Error saving:", error);
-      alert("Failed to save: " + error.message);
-    } else {
+      if (!res.ok) {
+        const errData = await res.json();
+        throw new Error(errData.error || "Failed to save");
+      }
+
       alert("Data saved successfully!");
+    } catch (error) {
+      console.error("Error saving:", error);
+      alert("Failed to save: " + errorMessage(error));
     }
   };
 
@@ -98,8 +117,8 @@ export default function ChannelLeadGenerationProposal() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-bold">Edit Channel Lead Generation Proposal - {data.companyName}</h1>
           <nav className="space-x-6">
-            <a href="/" className="text-white text-lg hover:underline">Home</a>
-            <a href="/dashboard" className="text-white text-lg hover:underline">Dashboard</a>
+            <Link href="/" className="text-white text-lg hover:underline">Home</Link>
+            <Link href="/dashboard" className="text-white text-lg hover:underline">Dashboard</Link>
           </nav>
         </div>
       </header>
@@ -148,7 +167,7 @@ export default function ChannelLeadGenerationProposal() {
             <div key={field}>
               <label className="text-lg font-bold text-gray-700 capitalize">{field.replace(/([A-Z])/g, " $1")}</label>
               <textarea
-                value={(data as any)[field]}
+                value={data[field as keyof ProposalData] as string}
                 onChange={(e) => handleChange(field, e.target.value)}
                 className="border p-3 w-full rounded-lg focus:ring-2 focus:ring-[#0091d2] text-lg"
                 rows={4}

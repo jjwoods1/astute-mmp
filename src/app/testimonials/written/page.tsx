@@ -1,14 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabase";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import PillNav from "@/components/PillNav";
 
 interface Company {
   companyTag: string;
   name: string;
   logoUrl: string;
+}
+
+interface ApiCompany {
+  companyTag: string;
+  name: string;
+  logoUrl?: string | null;
 }
 
 export default function WrittenTestimonials() {
@@ -18,17 +25,14 @@ export default function WrittenTestimonials() {
   useEffect(() => {
     const fetchCompanies = async () => {
       try {
-        const { data, error } = await supabase
-          .from('companies')
-          .select('*')
-          .eq('has_written_testimonial', true);
+        const res = await fetch("/api/companies?hasWrittenTestimonial=true");
+        if (!res.ok) throw new Error("Failed to fetch");
+        const data = await res.json();
 
-        if (error) throw error;
-
-        const companyData = (data || []).map((item) => ({
-          companyTag: item.company_tag,
+        const companyData: Company[] = (data || []).map((item: ApiCompany) => ({
+          companyTag: item.companyTag,
           name: item.name,
-          logoUrl: item.logo_url?.startsWith("/") ? item.logo_url : `/${item.logo_url}`,
+          logoUrl: item.logoUrl?.startsWith("/") ? item.logoUrl : `/${item.logoUrl ?? ""}`,
         }));
 
         setCompanies(companyData);
@@ -41,27 +45,74 @@ export default function WrittenTestimonials() {
     fetchCompanies();
   }, []);
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.08,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        type: "spring" as const,
+        stiffness: 100,
+        damping: 12
+      }
+    }
+  };
+
   return (
     <main className="bg-[#0091d2] text-white min-h-screen text-center p-6">
-      <h1 className="text-4xl font-bold">Written Testimonials</h1>
+      <motion.h1
+        className="text-4xl font-bold"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Written Testimonials
+      </motion.h1>
 
-      {/* Navigation Bar */}
-      <nav className="my-6 flex justify-center space-x-6 text-lg font-medium">
-        <Link href="/reception" className="hover:underline">Back to Reception</Link>
-        <Link href="/testimonials/video" className="hover:underline">Video Testimonials</Link>
-        <Link href="/telemarketing-guide" className="hover:underline">Telemarketing Guide</Link>
-      </nav>
+      {/* Pill Navigation Bar */}
+      <div className="my-6 flex justify-center">
+        <PillNav
+          items={[
+            { label: "Video", href: "/testimonials/video" },
+            { label: "Written", href: "/testimonials/written" },
+            { label: "Telemarketing Guide", href: "/telemarketing-guide" },
+            { label: "Reception", href: "/reception" },
+          ]}
+        />
+      </div>
 
       {error && <p className="text-red-500">{error}</p>}
 
-      {/* Company Logo Grid (Smaller Images) */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+      {/* Company Logo Grid with Animations */}
+      <motion.div
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         {companies.length === 0 && !error ? (
           <p className="text-lg">No written testimonials available.</p>
         ) : (
           companies.map((company) => (
-            <Link key={company.companyTag} href={`/testimonials/written/${company.companyTag}`} >
-              <div className="cursor-pointer hover:scale-105 transition">
+            <Link key={company.companyTag} href={`/testimonials/written/${company.companyTag}`}>
+              <motion.div
+                className="cursor-pointer"
+                variants={itemVariants}
+                whileHover={{ scale: 1.08, y: -5 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Image
                   src={company.logoUrl}
                   alt={company.name}
@@ -70,11 +121,11 @@ export default function WrittenTestimonials() {
                   unoptimized
                   className="object-contain h-[75px] w-auto"
                 />
-              </div>
+              </motion.div>
             </Link>
           ))
         )}
-      </div>
+      </motion.div>
     </main>
   );
 }

@@ -2,19 +2,23 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { supabase } from "@/lib/supabase";
+import { errorMessage } from "@/lib/errors";
+
+interface CompanyLite {
+  id: number;
+  name: string;
+  companyTag: string;
+}
 
 export default function CreateWrittenTestimonial() {
   const router = useRouter();
 
-  const [companies, setCompanies] = useState<any[]>([]);
+  const [companies, setCompanies] = useState<CompanyLite[]>([]);
   const [selectedCompany, setSelectedCompany] = useState("");
   const [newCompanyName, setNewCompanyName] = useState("");
   const [testimonialDate, setTestimonialDate] = useState("");
   const [testimonialImage, setTestimonialImage] = useState<File | null>(null);
-  const [testimonialPreview, setTestimonialPreview] = useState<string | null>(null);
   const [companyLogo, setCompanyLogo] = useState<File | null>(null);
-  const [companyLogoPreview, setCompanyLogoPreview] = useState<string | null>(null);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -22,16 +26,14 @@ export default function CreateWrittenTestimonial() {
 
   useEffect(() => {
     const fetchCompanies = async () => {
-      const { data, error } = await supabase
-        .from('companies')
-        .select('*');
-
-      if (error) {
+      try {
+        const res = await fetch("/api/companies");
+        if (!res.ok) throw new Error("Failed to fetch companies");
+        const data = await res.json();
+        setCompanies(data || []);
+      } catch (error) {
         console.error("Error fetching companies:", error);
-        return;
       }
-
-      setCompanies(data || []);
     };
 
     fetchCompanies();
@@ -42,10 +44,8 @@ export default function CreateWrittenTestimonial() {
     if (file) {
       if (type === "testimonial") {
         setTestimonialImage(file);
-        setTestimonialPreview(URL.createObjectURL(file));
       } else if (type === "logo") {
         setCompanyLogo(file);
-        setCompanyLogoPreview(URL.createObjectURL(file));
       }
     }
   };
@@ -55,9 +55,7 @@ export default function CreateWrittenTestimonial() {
     setNewCompanyName("");
     setTestimonialDate("");
     setTestimonialImage(null);
-    setTestimonialPreview(null);
     setCompanyLogo(null);
-    setCompanyLogoPreview(null);
     setSuccessMessage("Image testimonial added successfully!");
   };
 
@@ -88,19 +86,20 @@ export default function CreateWrittenTestimonial() {
 
         companyLogoFilename = `/images/Company-Logos/${companyLogo.name}`;
 
-        // Add new company to Supabase
-        const { data: newCompany, error: companyError } = await supabase
-          .from('companies')
-          .insert({
+        // Add new company to database
+        const companyRes = await fetch("/api/companies", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
             name: newCompanyName,
-            logo_url: companyLogoFilename,
-            company_tag: newCompanyName,
-            has_written_testimonial: true,
-          })
-          .select()
-          .single();
+            logoUrl: companyLogoFilename,
+            companyTag: newCompanyName,
+            hasWrittenTestimonial: true,
+          }),
+        });
 
-        if (companyError) throw companyError;
+        if (!companyRes.ok) throw new Error("Failed to create company");
+        const newCompany = await companyRes.json();
 
         companyToUse = newCompanyName;
         companyId = newCompany.id;
@@ -128,30 +127,36 @@ export default function CreateWrittenTestimonial() {
 
       const testimonialImageUrl = `/images/written-testimonial/${testimonialImage.name}`;
 
-      // Store testimonial in Supabase
-      const { error: testimonialError } = await supabase
-        .from('written_testimonials')
-        .insert({
-          company_name: companyToUse,
-          company_tag: companyToUse,
-          testimonial_date: testimonialDate,
-          testimonial_image_url: testimonialImageUrl,
-        });
+      // Store testimonial in database
+      const testimonialRes = await fetch("/api/written-testimonials", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          companyName: companyToUse,
+          companyTag: companyToUse,
+          testimonialDate,
+          testimonialImageUrl,
+        }),
+      });
 
-      if (testimonialError) throw testimonialError;
+      if (!testimonialRes.ok) throw new Error("Failed to create testimonial");
 
       // Update existing company to set has_written_testimonial: true
       if (companyId && selectedCompany !== "other") {
-        await supabase
-          .from('companies')
-          .update({ has_written_testimonial: true })
-          .eq('id', companyId);
+        const selectedCompanyDoc = companies.find((c) => c.id === companyId);
+        if (selectedCompanyDoc) {
+          await fetch(`/api/companies/${selectedCompanyDoc.companyTag}`, {
+            method: "PATCH",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ hasWrittenTestimonial: true }),
+          });
+        }
       }
 
       resetForm();
-    } catch (error: any) {
+    } catch (error) {
       console.error("Error:", error);
-      setError("Failed to upload testimonial.");
+      setError(errorMessage(error) || "Failed to upload testimonial.");
     }
 
     setIsSubmitting(false);

@@ -47,7 +47,7 @@ export default function HomePage() {
 
         {/* Welcome Message */}
         <h1 className="text-4xl font-bold text-[#0091d2] mb-6">Welcome to Astute MMP</h1>
-        <p className="text-lg text-gray-700 mb-8">Please choose where you'd like to go:</p>
+        <p className="text-lg text-gray-700 mb-8">Please choose where you&rsquo;d like to go:</p>
 
         {/* Navigation Buttons */}
         <div className="flex flex-col space-y-4 w-full mb-6">

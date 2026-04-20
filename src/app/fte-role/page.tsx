@@ -129,16 +129,16 @@ export default function FTERole() {
     >
       {/* Background Image with Blur */}
       <div
-        className="absolute inset-0 bg-cover bg-center -z-10"
+        className="absolute inset-0 bg-cover bg-center z-0"
         style={{
           backgroundImage: "url('/images/25 Oxford Road Reception.png')",
           filter: "blur(8px)",
         }}
       />
-      <div className="absolute inset-0 bg-black/30 -z-10" />
+      <div className="absolute inset-0 bg-black/30 z-0" />
 
       {/* Main Content Area */}
-      <div className="flex items-center justify-center gap-8 w-full max-w-[1400px] px-8">
+      <div className="relative z-10 flex items-center justify-center gap-8 w-full max-w-[1400px] px-8">
         {/* Computer Frame */}
         <div className={`relative flex items-center justify-center transition-all duration-500 ${selectedRole ? "w-[700px] h-[430px]" : "w-[900px] h-[550px]"}`}>
           <Image
@@ -295,7 +295,7 @@ export default function FTERole() {
       {/* Back to Reception Button */}
       <button
         onClick={() => router.push("/reception")}
-        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg font-semibold text-white bg-[#0091d2] border-2 border-white shadow-lg hover:bg-[#007bb5] transition-all duration-300 hover:scale-105"
+        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg font-semibold text-white bg-[#0091d2] border-2 border-white shadow-lg hover:bg-[#007bb5] transition-all duration-300 hover:scale-105 z-20"
       >
         &#x2190; Back to Reception
       </button>

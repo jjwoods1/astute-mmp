@@ -1,12 +1,13 @@
 "use client";
 
+import { ReactElement } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 interface SlideTemplateProps {
   slideNumber: number;
   title: string;
-  description: string | JSX.Element;
+  description: string | ReactElement;
   listItems?: string[];
   image?: string;
   images?: { src: string; alt: string }[];

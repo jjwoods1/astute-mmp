@@ -1,0 +1,7 @@
+Admin Page Requirements - Functuions
+
+- Manage Users (add, remove, reset password, etc...)
+- Manage Company Map Page (Companies & which countries that their campaigns serve)
+- Testimonials (Video, Written) - (add, Remove, Edit, etc...)
+- Hall Of Fame (Add, Remove) - Amend Years Shown
+- 

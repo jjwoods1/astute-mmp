@@ -2,11 +2,17 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { supabase } from "@/lib/supabase";
+import { errorMessage } from "@/lib/errors";
+
+interface AdminUser {
+  id: number;
+  email: string;
+  role: string;
+}
 
 export default function AdminDashboard() {
   const router = useRouter();
-  const [users, setUsers] = useState<any[]>([]);
+  const [users, setUsers] = useState<AdminUser[]>([]);
   const [newUserEmail, setNewUserEmail] = useState("");
   const [newUserRole, setNewUserRole] = useState("user");
 
@@ -15,16 +21,14 @@ export default function AdminDashboard() {
   }, []);
 
   const fetchUsers = async () => {
-    const { data, error } = await supabase
-      .from('users')
-      .select('*');
-
-    if (error) {
+    try {
+      const res = await fetch("/api/users");
+      if (!res.ok) throw new Error("Failed to fetch users");
+      const data = await res.json();
+      setUsers(data || []);
+    } catch (error) {
       console.error("Error fetching users:", error);
-      return;
     }
-
-    setUsers(data || []);
   };
 
   const createUser = async () => {
@@ -34,36 +38,34 @@ export default function AdminDashboard() {
     }
 
     try {
-      const { error } = await supabase
-        .from('users')
-        .insert({
-          email: newUserEmail,
-          role: newUserRole,
-        });
+      const res = await fetch("/api/users", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: newUserEmail, role: newUserRole }),
+      });
 
-      if (error) throw error;
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "Failed to create user");
+      }
 
       alert(`User created! Email: ${newUserEmail}`);
       setNewUserEmail("");
       fetchUsers();
-    } catch (error: any) {
+    } catch (error) {
       console.error("Error creating user:", error);
-      alert("Failed to create user: " + error.message);
+      alert("Failed to create user: " + errorMessage(error));
     }
   };
 
   const removeUser = async (userId: number) => {
-    const { error } = await supabase
-      .from('users')
-      .delete()
-      .eq('id', userId);
-
-    if (error) {
+    try {
+      const res = await fetch(`/api/users/${userId}`, { method: "DELETE" });
+      if (!res.ok) throw new Error("Failed to remove user");
+      fetchUsers();
+    } catch (error) {
       console.error("Error removing user:", error);
-      return;
     }
-
-    fetchUsers();
   };
 
   return (

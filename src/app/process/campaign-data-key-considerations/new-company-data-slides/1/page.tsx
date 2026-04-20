@@ -1,12 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 export default function CampaignDataSlide1() {
   const router = useRouter();
-  const pathname = usePathname();
   const currentSlide = 1;
 
   const [modalImage, setModalImage] = useState<string | null>(null);

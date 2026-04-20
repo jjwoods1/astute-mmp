@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { supabase } from "@/lib/supabase";
 
 export default function CreateVideoTestimonial() {
   const router = useRouter();
@@ -70,19 +69,21 @@ export default function CreateVideoTestimonial() {
 
         const data = JSON.parse(xhr.responseText);
 
-        // Save to Supabase
-        const { error: insertError } = await supabase
-          .from('video_testimonials')
-          .insert({
-            company_tag: companyTag,
-            video_url: data.videoUrl,
-            thumbnail_url: data.thumbnailUrl,
-            file_size: videoFile.size,
-            file_type: videoFile.type,
-          });
+        // Save to database
+        const dbRes = await fetch("/api/video-testimonials", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            companyTag,
+            videoUrl: data.videoUrl,
+            thumbnailUrl: data.thumbnailUrl,
+            fileSize: videoFile.size,
+            fileType: videoFile.type,
+          }),
+        });
 
-        if (insertError) {
-          console.error("Error saving to database:", insertError);
+        if (!dbRes.ok) {
+          console.error("Error saving to database");
           setError("Failed to save testimonial to database.");
           setIsSubmitting(false);
           return;

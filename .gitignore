@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/src/generated/prisma
+
+# Claude Code brainstorm / visual-companion scratch
+/.superpowers/
+
+# Large design source files (keep locally, commit exported assets only)
+*.psd
+*.ai
+
+# Claude Code per-machine local settings (may contain secrets)
+/.claude/settings.local.json

@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 // ============ CAMPAIGN DATA KEY CONSIDERATIONS ============
 const newCompanyDataSlides = [
@@ -472,10 +473,22 @@ export default function ProcessPage() {
       </div>
 
       {/* Campaign Data Slides Overlay */}
-      {activeSlideSet !== 'none' && (
-        <div className="fixed inset-0 z-40">
-          {/* Blurred backdrop of current page */}
-          <div className="absolute inset-0 backdrop-blur-md bg-black/40" />
+      <AnimatePresence>
+        {activeSlideSet !== 'none' && (
+          <motion.div
+            className="fixed inset-0 z-40"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Blurred backdrop of current page */}
+            <motion.div
+              className="absolute inset-0 backdrop-blur-md bg-black/40"
+              initial={{ backdropFilter: "blur(0px)" }}
+              animate={{ backdropFilter: "blur(8px)" }}
+              exit={{ backdropFilter: "blur(0px)" }}
+            />
 
           {/* Slide Content - Full screen layout matching original */}
           <div
@@ -487,7 +500,7 @@ export default function ProcessPage() {
             }}
           >
             {/* Title Bubble - positioned at 12% from top like original */}
-            <div
+            <motion.div
               className="absolute bg-white px-8 py-4 rounded-xl shadow-lg border-2 text-xl font-bold z-10"
               style={{
                 borderColor: "#0091d2",
@@ -497,21 +510,30 @@ export default function ProcessPage() {
                 transform: "translateX(-50%)",
                 whiteSpace: "nowrap",
               }}
+              initial={{ opacity: 0, y: -30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25, delay: 0.1 }}
             >
               {activeSlideSet === 'new-company' ? 'Campaign Data – Key Considerations' : 'Target Database – Key Considerations'}
-            </div>
+            </motion.div>
 
             {/* Content Box - 65% width, 550px height like original */}
-            <div
-              className={`bg-white p-8 rounded-xl shadow-lg flex flex-col text-gray-800 transition-all duration-300 ease-out
-                ${isSlideAnimating
-                  ? slideDirection === 'next'
-                    ? 'opacity-0 translate-x-8'
-                    : 'opacity-0 -translate-x-8'
-                  : 'opacity-100 translate-x-0'
-                }`}
+            <motion.div
+              className="bg-white p-8 rounded-xl shadow-lg flex flex-col text-gray-800"
               style={{ width: "65%", height: "550px", marginTop: "80px" }}
+              initial={{ opacity: 0, scale: 0.95, y: 30 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25, delay: 0.15 }}
             >
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentSlide}
+                  className="flex flex-col h-full"
+                  initial={{ opacity: 0, x: slideDirection === 'next' ? 50 : -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: slideDirection === 'next' ? -50 : 50 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                >
               {/* Header with Numbered Circle */}
               <div className="flex items-start">
                 <div
@@ -549,7 +571,7 @@ export default function ProcessPage() {
                 `}
               >
                 {slides[currentSlide]?.images.map((img, idx) => (
-                  <div
+                  <motion.div
                     key={idx}
                     className={`relative
                       ${slides[currentSlide].imageLayout === 'row-3' ? 'flex-1 max-w-[180px] h-[280px]' : ''}
@@ -557,6 +579,8 @@ export default function ProcessPage() {
                       ${slides[currentSlide].imageLayout === 'center' ? 'w-[350px] h-[250px]' : ''}
                       ${slides[currentSlide].imageLayout === 'right' ? 'w-[250px] h-[200px]' : ''}
                     `}
+                    whileHover={img.clickable ? { scale: 1.05 } : {}}
+                    whileTap={img.clickable ? { scale: 0.98 } : {}}
                   >
                     <Image
                       src={img.src}
@@ -567,26 +591,33 @@ export default function ProcessPage() {
                       onClick={() => img.clickable && showImage(img.src)}
                       loading="lazy"
                     />
-                  </div>
+                  </motion.div>
                 ))}
               </div>
-            </div>
+                </motion.div>
+              </AnimatePresence>
+            </motion.div>
 
             {/* Slide Navigation - Under the content box */}
-            <div
+            <motion.div
               className="absolute flex items-center justify-center space-x-3"
               style={{ bottom: "8%", left: "50%", transform: "translateX(-50%)" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
             >
-              <button
+              <motion.button
                 onClick={() => currentSlide > 0 && goToSlide(currentSlide - 1)}
                 disabled={currentSlide === 0}
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition shadow-md
                   ${currentSlide === 0 ? 'bg-gray-300 text-gray-500' : 'bg-white text-[#0091d2] hover:bg-[#0091d2] hover:text-white'}`}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
                 ←
-              </button>
+              </motion.button>
               {slides.map((_, index) => (
-                <button
+                <motion.button
                   key={index}
                   onClick={() => goToSlide(index)}
                   className={`w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold transition
@@ -594,50 +625,81 @@ export default function ProcessPage() {
                       ? "bg-[#0091d2] text-white"
                       : "bg-white text-[#0091d2] border-2 border-[#0091d2] hover:bg-[#0091d2] hover:text-white"
                     }`}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  animate={index === currentSlide ? { scale: [1, 1.1, 1] } : {}}
+                  transition={{ duration: 0.3 }}
                 >
                   {index + 1}
-                </button>
+                </motion.button>
               ))}
-              <button
+              <motion.button
                 onClick={() => currentSlide < slides.length - 1 && goToSlide(currentSlide + 1)}
                 disabled={currentSlide === slides.length - 1}
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition shadow-md
                   ${currentSlide === slides.length - 1 ? 'bg-gray-300 text-gray-500' : 'bg-white text-[#0091d2] hover:bg-[#0091d2] hover:text-white'}`}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
                 →
-              </button>
-            </div>
+              </motion.button>
+            </motion.div>
 
             {/* Back Button */}
-            <button
+            <motion.button
               onClick={() => setActiveSlideSet('none')}
               className="absolute bottom-10 left-10 bg-white text-[#0091d2] px-6 py-3 rounded-lg font-bold hover:bg-[#0091d2] hover:text-white transition shadow-md"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               ← Back to Campaign Data
-            </button>
+            </motion.button>
           </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Image Modal */}
-      {modalImage && (
-        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-80 z-50 p-4" onClick={() => setModalImage(null)}>
-          <div
-            onClick={(e) => e.stopPropagation()}
-            className="relative flex justify-center items-center overflow-hidden"
-            onWheel={handleWheelZoom}
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUp}
-            onMouseLeave={handleMouseUp}
-            onDoubleClick={handleDoubleClick}
-            style={{ width: "90vw", height: "80vh", cursor: zoom > 1 ? "grab" : "default" }}
+      <AnimatePresence>
+        {modalImage && (
+          <motion.div
+            className="fixed inset-0 flex justify-center items-center bg-black/80 z-50 p-4"
+            onClick={() => setModalImage(null)}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
           >
-            <Image src={modalImage} alt="Popup Image" width={800} height={600} className="rounded-lg shadow-lg" style={{ maxWidth: "90vw", maxHeight: "80vh", objectFit: "contain", transform: `scale(${zoom}) translate(${position.x}px, ${position.y}px)`, transition: isDragging ? "none" : "transform 0.2s ease-out" }} />
-            <button onClick={() => setModalImage(null)} className="absolute top-2 right-2 bg-white p-2 rounded-full shadow-md text-black font-bold hover:bg-[#0091d2] hover:text-white transition">&times;</button>
-          </div>
-        </div>
-      )}
+            <motion.div
+              onClick={(e) => e.stopPropagation()}
+              className="relative flex justify-center items-center overflow-hidden"
+              onWheel={handleWheelZoom}
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseUp}
+              onDoubleClick={handleDoubleClick}
+              style={{ width: "90vw", height: "80vh", cursor: zoom > 1 ? "grab" : "default" }}
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+            >
+              <Image src={modalImage} alt="Popup Image" width={800} height={600} className="rounded-lg shadow-lg" style={{ maxWidth: "90vw", maxHeight: "80vh", objectFit: "contain", transform: `scale(${zoom}) translate(${position.x}px, ${position.y}px)`, transition: isDragging ? "none" : "transform 0.2s ease-out" }} />
+              <motion.button
+                onClick={() => setModalImage(null)}
+                className="absolute top-2 right-2 bg-white p-2 rounded-full shadow-md text-black font-bold hover:bg-[#0091d2] hover:text-white transition"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                &times;
+              </motion.button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </main>
   );
 }

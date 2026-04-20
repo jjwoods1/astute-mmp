@@ -1,10 +1,17 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/navigation";
+
+interface AgentSection {
+  id: string;
+  label: string;
+  content?: string[];
+  videoUrl?: string;
+  graph?: boolean;
+}
 
 // Agent Sections Data
-const agentSections = [
+const agentSections: AgentSection[] = [
   {
     id: "typical",
     label: "Typical Agent Profile",
@@ -69,36 +76,34 @@ const agentSections = [
 
 // Productivity Curve Component using Canvas API
 function ProductivityGraph() {
-  const canvasRef = useRef(null);
-  const hoverTextRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const hoverTextRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
     const ctx = canvas.getContext("2d");
+    if (!ctx) return;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Draw axes
     ctx.strokeStyle = "#204050";
     ctx.lineWidth = 2;
 
-    // X-axis
     ctx.beginPath();
     ctx.moveTo(50, 350);
     ctx.lineTo(550, 350);
     ctx.stroke();
 
-    // Y-axis
     ctx.beginPath();
     ctx.moveTo(50, 50);
     ctx.lineTo(50, 350);
     ctx.stroke();
 
-    // Draw grid lines and labels
     ctx.setLineDash([5, 5]);
     ctx.strokeStyle = "#a0a0a0";
     for (let i = 1; i <= 4; i++) {
-      let xPos = 50 + i * 125;
+      const xPos = 50 + i * 125;
       ctx.beginPath();
       ctx.moveTo(xPos, 50);
       ctx.lineTo(xPos, 350);
@@ -107,10 +112,9 @@ function ProductivityGraph() {
       ctx.setLineDash([]);
       ctx.font = "20px Ubuntu";
       ctx.fillStyle = "#204050";
-      ctx.fillText(i, xPos - 10, 380);
+      ctx.fillText(String(i), xPos - 10, 380);
     }
 
-    // Draw first productivity curve (growing and declining)
     ctx.strokeStyle = "#d81b60";
     ctx.lineWidth = 3;
     ctx.beginPath();
@@ -119,34 +123,35 @@ function ProductivityGraph() {
     ctx.quadraticCurveTo(425, 300, 550, 250);
     ctx.stroke();
 
-    // Draw second curve (starting three-quarters in)
     ctx.beginPath();
     ctx.moveTo(300, 250);
     ctx.quadraticCurveTo(425, 100, 550, 150);
     ctx.stroke();
 
-    // Interactive hover events
-    canvas.addEventListener("mousemove", (event) => {
+    const updateHoverText = (x: number) => {
+      const el = hoverTextRef.current;
+      if (!el) return;
+      if (x >= 50 && x < 175) {
+        el.innerText = "Phase 1: Initial Growth Stage";
+      } else if (x >= 175 && x < 300) {
+        el.innerText = "Phase 2: Peak Performance Stage";
+      } else if (x >= 300 && x < 425) {
+        el.innerText = "Phase 3: Transition Stage";
+      } else if (x >= 425 && x <= 550) {
+        el.innerText = "Phase 4: Maturity and Decline";
+      } else {
+        el.innerText = "Hover over the numbers to see details.";
+      }
+    };
+
+    const handleMouseMove = (event: MouseEvent) => {
       const rect = canvas.getBoundingClientRect();
       const x = event.clientX - rect.left;
       updateHoverText(x);
-    });
+    };
 
-    function updateHoverText(x) {
-      if (hoverTextRef.current) {
-        if (x >= 50 && x < 175) {
-          hoverTextRef.current.innerText = "Phase 1: Initial Growth Stage";
-        } else if (x >= 175 && x < 300) {
-          hoverTextRef.current.innerText = "Phase 2: Peak Performance Stage";
-        } else if (x >= 300 && x < 425) {
-          hoverTextRef.current.innerText = "Phase 3: Transition Stage";
-        } else if (x >= 425 && x <= 550) {
-          hoverTextRef.current.innerText = "Phase 4: Maturity and Decline";
-        } else {
-          hoverTextRef.current.innerText = "Hover over the numbers to see details.";
-        }
-      }
-    }
+    canvas.addEventListener("mousemove", handleMouseMove);
+    return () => canvas.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   return (
@@ -159,8 +164,16 @@ function ProductivityGraph() {
   );
 }
 
-// Modal Component
-function Modal({ isOpen, onClose, title, content, videoUrl, graph }) {
+interface ModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  title: string;
+  content?: string[];
+  videoUrl?: string;
+  graph?: boolean;
+}
+
+function Modal({ isOpen, onClose, title, content, videoUrl, graph }: ModalProps) {
   if (!isOpen) return null;
 
   return (
@@ -196,12 +209,11 @@ function Modal({ isOpen, onClose, title, content, videoUrl, graph }) {
 
 // Main Page Component
 export default function Agents() {
-  const router = useRouter();
-  const [activeModal, setActiveModal] = useState(null);
+  const [activeModal, setActiveModal] = useState<AgentSection | null>(null);
 
-  const openModal = (modalId) => {
-    const section = agentSections.find((section) => section.id === modalId);
-    setActiveModal(section);
+  const openModal = (modalId: string) => {
+    const section = agentSections.find((s) => s.id === modalId);
+    if (section) setActiveModal(section);
   };
 
   const closeModal = () => {
@@ -218,7 +230,16 @@ export default function Agents() {
         ))}
       </div>
 
-      {activeModal && <Modal isOpen={!!activeModal} onClose={closeModal} title={activeModal.label} content={activeModal.content} videoUrl={activeModal.videoUrl} graph={activeModal.graph} />}
+      {activeModal && (
+        <Modal
+          isOpen={!!activeModal}
+          onClose={closeModal}
+          title={activeModal.label}
+          content={activeModal.content}
+          videoUrl={activeModal.videoUrl}
+          graph={activeModal.graph}
+        />
+      )}
     </main>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { marked } from "marked";
-import { supabase } from "@/lib/supabase";
 import sanitizeHtml from "sanitize-html";
 
 interface TableRow {
@@ -40,36 +39,31 @@ export default function ChannelLeadGenerationProposal() {
   }, []);
 
   const fetchProposal = async () => {
-    // For now, fetch the first proposal (since there's no auth)
-    // In a real app, you'd pass a user_id or proposal_id via URL params
-    const { data: proposalData, error } = await supabase
-      .from('proposals')
-      .select('*')
-      .limit(1)
-      .single();
+    try {
+      const res = await fetch("/api/proposals");
+      if (!res.ok) throw new Error("Failed to fetch");
+      const proposalData = await res.json();
 
-    if (error) {
-      console.log("No proposal found:", error);
-      return;
-    }
+      if (proposalData) {
+        const proposal: ProposalData = {
+          companyName: proposalData.companyName || "Company",
+          tableRows: proposalData.tableRows || [],
+          totalCampaignCost: proposalData.totalCampaignCost?.toString() || "$0.00",
+          leadBenchmark: proposalData.leadBenchmark || "",
+          primaryObjective: proposalData.primaryObjective || "",
+          secondaryObjective: proposalData.secondaryObjective || "",
+        };
 
-    if (proposalData) {
-      const proposal: ProposalData = {
-        companyName: proposalData.company_name || "Company",
-        tableRows: proposalData.table_rows || [],
-        totalCampaignCost: proposalData.total_campaign_cost?.toString() || "$0.00",
-        leadBenchmark: proposalData.lead_benchmark || "",
-        primaryObjective: proposalData.primary_objective || "",
-        secondaryObjective: proposalData.secondary_objective || "",
-      };
+        setData(proposal);
 
-      setData(proposal);
-
-      setSanitizedData({
-        leadBenchmark: sanitizeHtml(await marked.parse(proposal.leadBenchmark)),
-        primaryObjective: sanitizeHtml(await marked.parse(proposal.primaryObjective)),
-        secondaryObjective: sanitizeHtml(await marked.parse(proposal.secondaryObjective)),
-      });
+        setSanitizedData({
+          leadBenchmark: sanitizeHtml(await marked.parse(proposal.leadBenchmark)),
+          primaryObjective: sanitizeHtml(await marked.parse(proposal.primaryObjective)),
+          secondaryObjective: sanitizeHtml(await marked.parse(proposal.secondaryObjective)),
+        });
+      }
+    } catch (err) {
+      console.log("No proposal found:", err);
     }
   };
 

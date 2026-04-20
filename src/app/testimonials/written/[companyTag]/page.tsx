@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import { supabase } from "@/lib/supabase";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,6 +9,12 @@ interface Testimonial {
   id: string;
   imageUrl: string;
   text: string;
+}
+
+interface ApiWrittenTestimonial {
+  id: number;
+  testimonialImageUrl?: string | null;
+  testimonialText?: string | null;
 }
 
 export default function CompanyTestimonials() {
@@ -22,29 +27,22 @@ export default function CompanyTestimonials() {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        // Fetch company name from "companies" table
-        const { data: companyData } = await supabase
-          .from('companies')
-          .select('name')
-          .eq('company_tag', companyTag)
-          .single();
-
-        if (companyData) {
+        // Fetch company name
+        const companyRes = await fetch(`/api/companies/${companyTag}`);
+        if (companyRes.ok) {
+          const companyData = await companyRes.json();
           setCompanyName(companyData.name);
         }
 
-        // Fetch testimonials from "written_testimonials" table
-        const { data: testimonialData, error } = await supabase
-          .from('written_testimonials')
-          .select('*')
-          .eq('company_tag', companyTag);
+        // Fetch testimonials
+        const testimonialRes = await fetch(`/api/written-testimonials?companyTag=${companyTag}`);
+        if (!testimonialRes.ok) throw new Error("Failed to fetch testimonials");
+        const testimonialData = await testimonialRes.json();
 
-        if (error) throw error;
-
-        const formattedTestimonials = (testimonialData || []).map((item) => ({
+        const formattedTestimonials: Testimonial[] = (testimonialData || []).map((item: ApiWrittenTestimonial) => ({
           id: item.id.toString(),
-          imageUrl: item.testimonial_image_url,
-          text: item.testimonial_text || '',
+          imageUrl: item.testimonialImageUrl ?? '',
+          text: item.testimonialText || '',
         }));
 
         setTestimonials(formattedTestimonials);
